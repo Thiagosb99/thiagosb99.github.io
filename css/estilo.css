@@ -101,11 +101,9 @@ div.edit-container .row p {
 p[target="em"]{
     font-weight: bold;
     color: #303030;
-    font-size:18px;
+    font-size:180%;
 }
- https://thiagosb99.github.io/  
-
-
+ 
 footer{
     background-color: #4682B4;;
     height: 200px;

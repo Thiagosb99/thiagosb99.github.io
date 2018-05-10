@@ -1,13 +1,57 @@
 *{ 
 padding: 0;
 margin: 0;}
+/*inicio da pagina */
+
+/*
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+    0%{opacity: 0;}    
+100% { opacity: 1;}  
+}
+
+.fadeIn {
+-webkit-animation: fadeIn 1s ease-in-out;
+-moz-animation: fadeIn 1s ease-in-out;
+-o-animation: fadeIn 1s ease-in-out;
+animation: fadeIn 1s ease-in-out;
+}
+*/
+@keyframes texto{
+    0%{margin-left: -1000px; opacity: 0;}
+   
+    100%{margin-left:0px; opacity: 1;}
+}
+
+@keyframes iniciar{
+    0%{margin-left: 500px; opacity: 0;}
+   
+    100%{margin-left:0px; opacity: 1;}
+}
+.texto{
+   animation: texto 1.3s ease-in-out; 
+}
+.iniciar{
+animation: iniciar 1.3s ease-in-out;
+}
 body{
-    background-image: url(https://thiagosb99.github.io/img/wall4.jpg);
+    background-image: url(img/wall4.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    background-position: center;
     background-size: cover;
-   
 }
 
 /*header*/
@@ -23,12 +67,29 @@ header .container img{
     height: 100px;
 }
 
-header .container h1{
+h1{
     margin-top: 15px;
     font-weight: none;
     font-size: 50px;
     font-family: 'economica', sans-serif;
     color: #fff;
+}
+nav li a{
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+    color: #FFF;
+}
+nav li a:hover{
+    color: rgb(250,250,0,0.5);
+    text-decoration: none;
+}
+nav li{
+     margin-top: 10px;
+    font-weight: none;
+    font-size: 50px;
+    font-family: 'economica', sans-serif;
+    color: #fff;
+    list-style: none;
 }
 
 /*do dyeon
@@ -52,7 +113,11 @@ economica
   background-color: #fff;
   border-color:rgb(50,50,50);
 margin:0 55% 0 45%;
+    transition: linear 0.3s;      
   
+}
+.sub-icon:hover{
+     transform: scale(1.5);
 }
 .icone{
     position: absolute;
@@ -63,8 +128,9 @@ margin:0 55% 0 45%;
   display: inline-block;
   padding: 10px 20px;
   margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
   line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
@@ -82,8 +148,16 @@ margin:0 55% 0 45%;
     
     
  color: #fff;
-  background-color: rgb(169,169,169,0.7)    ;
+  background-color: rgb(169,169,169,0.7);
   border-color: yellow;    
+}
+.botao:hover{
+     color: rgb(169,169,169);
+  background-color: #fff;
+  border-color: yellow;
+        transition-timing-function: linear;
+    transition-duration: 0.6s;
+    transition-delay: 0.1s;
 }
 .barra{
   width: 100%;
@@ -111,7 +185,7 @@ margin:0 55% 0 45%;
 /*Blocos -----------------------*/
 .blocos{
     padding: 50px 10px 0 20px;
-    height: 350px;
+    height: auto;
     width: 100%;
     background-color: rgb(112,128,144,0.1);
     margin: 50px 0;
@@ -124,7 +198,7 @@ margin:0 55% 0 45%;
     border-style: outset inset outset  inset;
    */   
 }
-.blocos p{
+p{
         font-family: 'Source Sans Pro', sans-serif;
         text-align: justify;
         color: #fff;
@@ -132,26 +206,41 @@ margin:0 55% 0 45%;
 .btn-info{
     background-color: gray;
 }
-#open p{
-    margin: 5px 0 20px 15px;
-    font-size: 22px;
-    opacity: 0.8;
-    border: inset  #d0d0d0;
-    border-width: 0 0 1px 0;
-}
+
 #skills{
-    margin-top: 80px;
+    margin-top: 130px;
     height: 700px;
 
 }
-.fa-arrow-circle-right{
-    margin: 8px 0 63px 0;
-    color:#2e6da4;
+#start{
+    margin: none;
+    padding: 25px 0;
+    background-color: rgb(112,128,144,0.0);
+    box-shadow: none;
+    height: auto;
 }
-p[target="em"]{
-    font-weight: bold;
-    color: #303030;
-    font-size:18px;
+#start p{
+    font-size: 30px;
+    padding: 0 25px;
+    font-family: 'oswald', sans-serif;
+}
+#about p{
+     margin: 5px 0 30px 15px;
+    font-size: 22px;
+    opacity: 0.8; 
+}
+.fa-arrow-alt-circle-right{
+    margin: 8px 25% 25px 25%;
+    color: rgb(500,500,500);
+}
+h2{
+    font: 40px  'oswald', sans-serif ;
+    color: #fff;
+    text-align: center;
+}
+hr{
+    width: 70%;
+    margin: 10px 12% 20px 12%;
 }
 
 
@@ -160,20 +249,143 @@ p[target="em"]{
 
 /*footer---------------------------*/
 footer{
-    background-color: none;
+    background-color: rgb(169,169,169,0.2);
+    padding: 10px 0 10px 0;
+
+}
+footer address{
+        font-size:17px;
+        text-decoration: underline;
+        font-family: 'open sans','arial',sans-serif;
+        color: rgb(255,255,255,0.6);
+}
+footer a{
+    display: block;
+}
+footer i:hover{
+    color:#fff;
+}
+footer i{
+    transition-timing-function: linear;
+    transition-duration: 0.6s;
+    transition-delay: 0.1s;    
+    color: rgb(255,255,255,0.4);
+    float: left;
+    margin: 0 5px;
+}
+footer p{
+    margin: 40px 0 0 0;
+    font-size:16px;
+    font-family: 'arial';
+    text-align: right;
+    color: rgb(255,255,255,0.4)
 }
 
 
 
 
 
-/*MEDIAS */
-@media (max-width: 575.98px) { 
+/*-------------MEDIAS ------------------------------*/
+
+@media (min-width:250px) and (max-width:479px){
+    header{
+        margin-left: 13px;
+        width: 100%;
+    }
+    header img{
+        position: absolute;
+        visibility: hidden;  
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+      margin-top: -50px;
+    }
+    nav li{
+        font-size:20px;
+    }
+    #start p{
+    font-size: 23px;
+    text-align: justify;
+ 
+    }
+    .fa-2x{
+        position: absolute;
+       visibility: hidden;
+    }
+    .botao{
+        width: 100%;
+   
+    }
+    .blocos{
+        margin-left: 13px;
+    }
+    #about{
+       
+        height: auto;
+    }
+    #about p{
+         text-align: justify;
+        font-size: 15px;
+      margin: 0px 0 10px 0;
+    }
     
+    .porcentagem{
+        font-size: 100%;
+        color: rgb(855,855,0,0.0);
+    }
+    #skills{
+        align-items: center;
+    }
+     .icone{
+      left: 0;
+    }
+    .sub-icon{
+      margin-left: 35%;
+    }
+    footer{
+        width: 100%;
+         margin-left: 13px;
+    }
+    footer address{
+        margin-left: 20px;
+    }
+    footer i{
+    float: left;
+        margin-left: 20px;
+    }
+    footer p{
+    margin: 0;
+    font-size:100%;
+    text-align: center;
+}
+}
+
+@media (min-width:480px) and (max-width:597px){
+    
+    .fa-2x{
+       margin-bottom: 60px;
+    }
+    .sub-icon{
+      margin-left: 40%;
+    }
+    .icone{
+        left: 0;
+    }
+     .botao{
+         
+        width: 100%;
+   margin-left: 0px;
+    }
+}
+
+@media (max-width: 598px) { 
+
 }
 
 
-// Small devices (landscape phones, 576px and up)
+//Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) { 
 
 

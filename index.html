@@ -2,12 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://thiagosb99.github.io/css/estilo.css">
-       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="tryothersthingsCSs.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Economica|Source+Sans+Pro" rel="stylesheet">
         <title>lets go man</title>
     </head>
+    
     <body style="background-color: rgb(112,128,144,0.1)">
         <header>
             <div class="container">
@@ -16,46 +18,23 @@
                         <img src="img/luffy.png">
                     </div>
                 <div class="col-md-10">
-                        <p class="text-left">Thiago dos Santos Barbosa </p>
+                         <h1 class="text-left">Thiago dos Santos Barbosa </h1>
                 </div>
             </div>
             </div>
         </header>
         
-        <div class="container edit-container">
-        <img src="img/info.png" class="info">
-            Sobre
-         <hr>
-            <div class="row">
-            <div class="col-md-6">
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tristique metus. Vivamus finibus nisl egestas arcu bibendum, eu lobortis magna sodales. Mauris ultrices felis id tempor congue. Donec non leo at sapien varius gravida. Curabitur venenatis neque eu tristique congue. Vestibulum malesuada id massa ut tempus. Duis non placerat mi, eget luctus sem. Nam finibus ullamcorper ultricies.
-
-                </p>
-                </div>
-                
-                <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tristique metus. Vivamus finibus nisl egestas arcu bibendum, eu lobortis magna sodales. Mauris ultrices felis id tempor congue. Donec non leo at sapien varius gravida. Curabitur venenatis neque eu tristique congue. Vestibulum malesuada id massa ut tempus. Duis non placerat mi, eget luctus sem. Nam finibus ullamcorper ultricies.
-
-                </p>
-                </div>
-            </div>
-        </div>
-     
        <section class="container " style="background-color: none">
         <div class="row">
            <div class="col-md-6">
-               <div id ="skills" class="blocos">
-               <button class="btn btn-info btn-lg active icone"><i class="fa fa-code "></i> SKILLS</button>
+               <div id ="open" class="blocos">
+             <button  class="botao icone">
+                   <i class="fas fa-info-circle fa-lg "></i> About me
+                     </button>
                    <div class="row">
                        
                         <div class="col-xs-1 col-sm-1 col-md-1">
-                           <button class="sub-icon" ><i class="fab fa-html5 fa-2x"></i></button>
-                            <button class="sub-icon" ><i class="fab fa-css3-alt fa-2x"></i></button>
-                            <button class="sub-icon" ><i class="fab fa-java fa-2x"></i></button>
-                             <button class="sub-icon" ><i class="fab fa-php fa-2x" ></i></button>
-                            <button class="sub-icon" ><i class="fab fa-lg">C#</i></button>
-                            <button class="sub-icon" title="LÓGICA DE PROGRAMAÇÃO" ><i class="fas fa-cogs fa-2x" ></i></button>
+                           
                         </div>
                        
                             <div class="col-xs-11 col-sm-11 col-md-11">
@@ -67,7 +46,7 @@
                        </div>
                </div>
                 <div class="blocos ">
-               <button class="btn btn-info btn-lg active icone">
+               <button class="botao icone">
                    <i class="fa fa-graduation-cap "></i> Escolaridade
                 </button>
                      <div class="row">
@@ -88,30 +67,21 @@
                </div>
             </div>
             <div class="col-md-6">
-                <div class="blocos " >
-                  <button class="btn btn-info btn-lg active icone " ><i class="fa fa-briefcase "></i> experiencia </button>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tristique metus. Vivamus finibus nisl egestas arcu bibendum, eu lobortis magna sodales.
-                        <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tristique metus. Vivamus finibus nisl egestas arcu bibendum, eu lobortis magna sodales.
-                        <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tristique metus. Vivamus finibus nisl egestas arcu bibendum, eu lobortis magna sodales.
-                      
-                    
-                    </p>
-                        
+                <div id="skills" class="blocos " >
+                            <button class="botao icone"><i class="fa fa-code "></i> SKILLS</button>
+                            <button class="sub-icon" ><i class="fab fa-html5 fa-4x"></i></button> 
+                                <div class="barra"  role="progressbar"><div class="porcentagem" style="width: 50%;">HTML 50%</div></div>
+                            <button class="sub-icon" ><i class="fab fa-css3-alt fa-4x"></i></button>
+                       <div class="barra"  role="progressbar"><div class="porcentagem" style="width: 60%;">CSS 60%</div></div>
+                           
+                            <button class="sub-icon" ><i class="fab fa-php fa-4x" ></i></button>
+                       <div class="barra"  role="progressbar"><div class="porcentagem" style="width: 20%;">PHP 20%</div></div>
+                            <button class="sub-icon" ><i class="fab fa-lg fa-3x">C#</i></button>
+                     <div class="barra"  role="progressbar"><div class="porcentagem" style="width: 40%;">C# 40%</div></div>
+                            <button class="sub-icon" title="LÓGICA DE PROGRAMAÇÃO" ><i class="fas fa-cogs fa-3x" ></i></button>
+                       <div class="barra"  role="progressbar"><div class="porcentagem" style="width: 70%;">Lógica de Programação 70%</div></div>
                 </div>
-                 <div class="blocos ">
-               <button  class="btn btn-info btn-lg active icone">
-                   <i class="fas fa-info-circle fa-lg "></i> About me
-                     </button>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tristique metus. Vivamus finibus nisl egestas arcu bibendum, eu lobortis magna sodales.
-                        <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tristique metus. Vivamus finibus nisl egestas arcu bibendum, eu lobortis magna sodales.
-                        <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tristique metus. Vivamus finibus nisl egestas arcu bibendum, eu lobortis magna sodales.
-                      
-               </div>
+              
             </div>
            
            </div>

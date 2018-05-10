@@ -169,9 +169,6 @@ footer{
 
 /*MEDIAS */
 @media (max-width: 575.98px) { 
-
- p[target="em"]{
-    font-size:20px;
 }
 
 

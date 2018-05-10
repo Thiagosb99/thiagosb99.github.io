@@ -1,89 +1,115 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @Thiagosb99
-Sign out
-0
-0 0 Thiagosb99/thiagosb99.github.io
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-thiagosb99.github.io/css/estilo.css
-dc43caa  6 hours ago
-@Thiagosb99 Thiagosb99 Update estilo.css
-     
-111 lines (95 sloc)  1.71 KB
 *{ 
 padding: 0;
 margin: 0;}
+body{
+    background-image: url(img/wall4.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+   
+
+}
+
+/*header*/
 
 header{
-    background-color: #4682B4;
+    background-color: rgb(169,169,169,0.2);
     margin-bottom: 10px;
+    padding: 25px 0;
+
 }
 header .container img{
     width: 100px;
     height: 100px;
-    
 }
 
-header .container p {
+header .container h1{
     margin-top: 15px;
-    font-weight: bold;
-    font-size: 40px;
+    font-weight: none;
+    font-size: 50px;
+    font-family: 'economica', sans-serif;
     color: #fff;
 }
 
-.edit-container{
-    height: auto;
-    border-bottom: 2px 0;
-    border-left: 1px 0;
-    border: solid white;
-  
-}
+/*do dyeon
+Righteous
 
-div.edit-container img{
-    margin-top: 8px;
-}
+Orbitron
+economica
+*/
 
-div.edit-container {
-    
-    font-weight: bold;
-    font-size: 30px;
-    color: #000;
-}
+/*end header---------------------*/
 
-div.edit-container .row p {
-    
-    font-weight: none;
-    font-size: 12px;
-    color: #000;
-}
 
-.info{
-    width: 50px; 
-    height: 50px;   
-}
-
+/*Icons e barra----------------------------------*/
 .sub-icon{
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
+  width: 75px;
+  height: 75px;
     /*btn-custom*/
-  border: 1px solid ;
+  border: 2px solid ;
   border-radius: 360px;
-  color: #2e6da4;
+  color: rgb(50,50,50);
   background-color: #fff;
-  border-color: #2e6da4;
+  border-color:rgb(50,50,50);
+margin:0 55% 0 45%;
+  
 }
 .icone{
     position: absolute;
     margin-top: -70px;
     left: 20px;
 }
+.botao{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+    
+    
+ color: #fff;
+  background-color: rgb(169,169,169,0.7)    ;
+  border-color: yellow;    
+}
+.barra{
+  width: 100%;
+  height: 35px;
+  font-size: 12px;
+  line-height: 25px;
+  color: #fff;
+  text-align: right;
+  background-color: rgb(855,855,0,0.2);
+    margin: 5px 0;
+    border-radius: 3px;
+}
+.porcentagem{
+    width:0;
+    font-weight: bold;
+    border-radius: 3px;
+    font-family: 'economica',sans-serif;
+    font-size: 25px;
+    padding: 5px  5px 0 0;
+    height:35px;
+    background-color: rgb(855,855,0,0.7);
+}
 
+
+/*Blocos -----------------------*/
 .blocos{
     padding: 50px 10px 0 20px;
     height: 350px;
@@ -102,14 +128,22 @@ div.edit-container .row p {
 .blocos p{
         font-family: 'Source Sans Pro', sans-serif;
         text-align: justify;
-        color: #505050;
+        color: #fff;
 }
-#skills p{
+.btn-info{
+    background-color: gray;
+}
+#open p{
     margin: 5px 0 20px 15px;
     font-size: 22px;
     opacity: 0.8;
     border: inset  #d0d0d0;
     border-width: 0 0 1px 0;
+}
+#skills{
+    margin-top: 80px;
+    height: 700px;
+
 }
 .fa-arrow-circle-right{
     margin: 8px 0 63px 0;
@@ -118,10 +152,43 @@ div.edit-container .row p {
 p[target="em"]{
     font-weight: bold;
     color: #303030;
-    font-size:130%;
+    font-size:18px;
 }
+
+
+
+
+
+/*footer---------------------------*/
 footer{
-    
-    background-color: #4682B4;;
-    height: 200px;
+    background-color: none;
+
 }
+
+
+
+
+
+/*MEDIAS */
+@media (max-width: 575.98px) { 
+
+ p[target="em"]{
+    font-size:20px;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+
+ 
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }

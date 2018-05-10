@@ -313,9 +313,9 @@ footer p{
         position: absolute;
        visibility: hidden;
     }
-    .botao{
-        width: 100%;
-   
+     .botao{
+      width: 90%;
+        margin-left: 13px;
     }
     .blocos{
         margin-left: 13px;
@@ -369,10 +369,9 @@ footer p{
       margin-left: 40%;
     }
    
-     .botao{
+         .botao{
          
-        width: 100%;
-   margin-left: 0px;
+        width: 90%;
     }
 }
 

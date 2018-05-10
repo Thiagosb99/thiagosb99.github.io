@@ -20,7 +20,8 @@ margin: 0;}
     0%{opacity: 0;}    
 100% { opacity: 1;}  
 }
-fadeIn {
+
+.fadeIn {
 -webkit-animation: fadeIn 1s ease-in-out;
 -moz-animation: fadeIn 1s ease-in-out;
 -o-animation: fadeIn 1s ease-in-out;
@@ -45,7 +46,7 @@ animation: fadeIn 1s ease-in-out;
 animation: iniciar 1.3s ease-in-out;
 }
 body{
-    background-image: url(https://thiagosb99.github.io/img/wall4.jpg);
+    background-image: url(img/wall4.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -269,11 +270,13 @@ footer i{
     transition-duration: 0.6s;
     transition-delay: 0.1s;    
     color: rgb(255,255,255,0.4);
-    float: left;
-    margin: 0 5px;
+    margin: 0 7px;
 }
+ footer ul li{
+        display: inline-block;
+    }
 footer p{
-    margin: 40px 0 0 0;
+    margin: -30px 0 0 0;
     font-size:16px;
     font-family: 'arial';
     text-align: right;
@@ -313,7 +316,7 @@ footer p{
         position: absolute;
        visibility: hidden;
     }
-     .botao{
+    .botao{
       width: 90%;
         margin-left: 13px;
     }
@@ -337,41 +340,71 @@ footer p{
     #skills{
         align-items: center;
     }
-   
+    
     .sub-icon{
       margin-left: 35%;
     }
     footer{
         width: 100%;
          margin-left: 13px;
+        text-align-last: center;
     }
     footer address{
-        margin-left: 20px;
+       
+        text-align: center;
     }
-    
-    footer i{
-    float: left;
-        margin-left: 20px;
+   
+    footer ul li{
+        float: none;
+        display: inline-block;
+        align-items: center;
     }
     footer p{
-    margin: 0;
+        margin: 0;
+   
     font-size:100%;
     text-align: center;
+         
 }
 }
 
 @media (min-width:480px) and (max-width:597px){
-    
+    header{
+        margin-left: 13px;
+    }
     .fa-2x{
        margin-bottom: 60px;
     }
     .sub-icon{
       margin-left: 40%;
     }
-   
-         .botao{ 
-        width: 90%;
+    .blocos{
+        margin-left: 13px;
     }
+     .botao{
+      width: 90%;
+        margin-left: 13px;
+    }
+       footer address{
+       
+        text-align: center;
+    }
+    footer{
+        text-align-last: center;
+          margin-left: 13px;
+    }
+    footer ul li{
+        float: none;
+        display: inline-block;
+        align-items: center;
+    }
+    footer p{
+        margin: 0;
+   
+    font-size:100%;
+    text-align: center;
+         
+}
 }
 
 @media (max-width: 598px) { 
@@ -381,6 +414,7 @@ footer p{
 
 //Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) { 
+
 
  
 }

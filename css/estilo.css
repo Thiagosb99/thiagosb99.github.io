@@ -46,7 +46,7 @@ animation: fadeIn 1s ease-in-out;
 animation: iniciar 1.3s ease-in-out;
 }
 body{
-    background-image: url(img/wall4.jpg);
+    background-image: url(https://thiagosb99.github.io/img/wall4.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;

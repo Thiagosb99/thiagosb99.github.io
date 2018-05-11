@@ -290,6 +290,9 @@ footer p{
 /*-------------MEDIAS ------------------------------*/
 
 @media (min-width:250px) and (max-width:479px){
+     body{
+        background-image: url(https://thiagosb99.github.io/img/wall-xs.jpg);
+    }
     header{
         margin-left: 13px;
         width: 100%;
@@ -369,6 +372,9 @@ footer p{
 }
 
 @media (min-width:480px) and (max-width:597px){
+     body{
+        background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
+    }
     header{
         margin-left: 13px;
     }

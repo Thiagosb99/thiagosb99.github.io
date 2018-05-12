@@ -388,8 +388,8 @@ footer p{
     }
     
     .botao{
-      width: 90%;
-        margin-left: 13px;
+      width: 100%;
+        margin-left: 0;
     }
     .blocos{
         margin-left: 13px;

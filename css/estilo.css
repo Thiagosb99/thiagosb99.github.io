@@ -347,7 +347,7 @@ footer p{
 /*-------------MEDIAS ------------------------------*/
 
 @media (min-width:250px) and (max-width:479px){
-    .iniciar, texto{
+   .iniciar, texto{
             animation-duration: 1.7s;
     }
 
@@ -355,7 +355,7 @@ footer p{
         background-image: url(https://thiagosb99.github.io/img/wall-xs.jpg);
     }
     header{
-        margin-left: 13px;
+      
         width: 100%;
     }
     header img{
@@ -388,10 +388,10 @@ footer p{
     
    .botao{
       width: 90%;
-        margin-left: 13px;
+       
     }
     .blocos{
-        margin-left: 13px;
+       
     }
     #about p{
        font-size: 18px;
@@ -411,7 +411,7 @@ footer p{
     }
     footer{
         width: 100%;
-         margin-left: 13px;
+         
         text-align-last: center;
     }
     footer address{

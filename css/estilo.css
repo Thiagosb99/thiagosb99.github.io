@@ -3,6 +3,10 @@ padding: 0;
 margin: 0;}
 
 /*-----------------------cair */
+.hope{
+    padding-right: 30px;
+    padding-left: 30px;
+}
 
 @keyframes  cair{
   from {

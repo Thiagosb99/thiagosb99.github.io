@@ -353,13 +353,18 @@ footer p{
 @media (min-width:250px) and (max-width:479px){
    .iniciar, texto{
             animation-duration: 1.7s;
+       
     }
 
     body{
         background-image: url(https://thiagosb99.github.io/img/wall-xs.jpg);
+        padding-right:8%;
+        align-items: center;
+        padding-left:8%;
     }
     header{
-      
+          background-color: rgb(169,169,169,0.0);
+        border-radius: 5px;
         width: 100%;
     }
     header img{
@@ -394,13 +399,16 @@ footer p{
       width: 90%;
        
     }
-    .blocos{
-       
-    }
+   
     #about p{
        font-size: 18px;
+        
+          
     }
-  
+    .blocos{
+          background-color: rgb(169,169,169,0.0);
+    box-shadow: none;
+    }
     
     .porcentagem{
         font-size: 100%;
@@ -415,7 +423,7 @@ footer p{
     }
     footer{
         width: 100%;
-         
+             background-color: rgb(169,169,169,0.0);
         text-align-last: center;
     }
     footer address{
@@ -484,6 +492,7 @@ footer p{
         text-align: center;
     }
     footer{
+       
         text-align-last: center;
           margin-left: 26px;
     }
@@ -586,7 +595,6 @@ footer p{
     }
     h1{margin-left:-25%;}
 }
-
 
 
 

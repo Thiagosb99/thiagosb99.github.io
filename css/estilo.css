@@ -1,8 +1,44 @@
 *{ 
 padding: 0;
 margin: 0;}
-/*inicio da pagina */
 
+
+/*-----------------------cair */
+
+@keyframes  cair{
+  from {
+      position: absolute;
+      margin-top: -80px;
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+      position: static;
+      margin-top: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.cair{
+  animation-name: cair;
+    animation-timing-function: ease-in-out;
+}
+.t1{
+    animation-duration: 0.5s;
+}
+.t2{
+    animation-duration: 1s;
+}.t3{
+    animation-duration: 1.5s;
+}.t4{
+    animation-duration: 2s;
+}.t5{
+    animation-duration: 2.5s;
+}
+
+
+/*-------teste------------*/
 /*
 @-webkit-keyframes fadeIn {
 0% { opacity: 0; }
@@ -28,6 +64,7 @@ margin: 0;}
 animation: fadeIn 1s ease-in-out;
 }
 */
+
 @keyframes texto{
     0%{margin-left: -1000px; opacity: 0;}
    
@@ -39,11 +76,13 @@ animation: fadeIn 1s ease-in-out;
    
     100%{margin-left:0px; opacity: 1;}
 }
+
 .texto{
    animation: texto 1.3s ease-in-out; 
 }
 .iniciar{
-animation: iniciar 1.3s ease-in-out;
+animation-name: iniciar  ;
+    animation-timing-function: ease-in-out;
 }
 body{
     background-image: url(https://thiagosb99.github.io/img/wall4.jpg);
@@ -64,7 +103,9 @@ header{
 }
 header .container img{
     width: 100px;
-    height: 100px;
+    height: 120px;
+    border-radius: 5px;
+  
 }
 
 h1{
@@ -77,13 +118,10 @@ h1{
 nav li a{
     transition-timing-function: ease;
     transition-duration: 0.5s;
-    color: #FFF;
-}
-nav li a:hover{
     color: rgb(250,250,0,0.5);
-    text-decoration: none;
 }
 nav li{
+   
      margin-top: 10px;
     font-weight: none;
     font-size: 50px;
@@ -91,6 +129,16 @@ nav li{
     color: #fff;
     list-style: none;
 }
+nav li a:hover{
+    
+    
+    color: rgb(250,250,0);
+    text-decoration: none;
+}
+  nav li a[href="#con"] i{
+     visibility: hidden;
+      position: absolute;
+    }
 
 /*do dyeon
 Righteous
@@ -113,10 +161,12 @@ economica
   background-color: #fff;
   border-color:rgb(50,50,50);
 margin:0 55% 0 45%;
-    transition: linear 0.3s;      
+    transition: all 0.1s;      
   
 }
 .sub-icon:hover{
+     color: #fff;
+  background-color:rgb(50,50,50);
      transform: scale(1.5);
 }
 .icone{
@@ -224,10 +274,18 @@ p{
     padding: 0 25px;
     font-family: 'oswald', sans-serif;
 }
-#about p{
-     margin: 5px 0 30px 15px;
+#about p {
+  text-align: left;
     font-size: 22px;
     opacity: 0.8; 
+    margin: 0 0 30px 30px;
+}
+#about p i {
+    position: absolute;
+      margin-left: -40px;
+    font-size: 20px;
+    opacity: 1;
+    color: rgb(855,855,0,0.2);
 }
 .fa-arrow-alt-circle-right{
     margin: 8px 25% 25px 25%;
@@ -290,7 +348,11 @@ footer p{
 /*-------------MEDIAS ------------------------------*/
 
 @media (min-width:250px) and (max-width:479px){
-     body{
+    .iniciar, texto{
+            animation-duration: 1.7s;
+    }
+
+    body{
         background-image: url(https://thiagosb99.github.io/img/wall-xs.jpg);
     }
     header{
@@ -307,6 +369,15 @@ footer p{
     h2{
       margin-top: -50px;
     }
+    nav li a[href="#con"]{
+        position: absolute;
+        visibility: hidden;
+    }
+     nav li a[href="#con"] i{
+        position:static;
+        visibility: visible;
+        margin: -45% 0 0 0;
+    }
     nav li{
         font-size:20px;
     }
@@ -315,10 +386,7 @@ footer p{
     text-align: justify;
  
     }
-    .fa-2x{
-        position: absolute;
-       visibility: hidden;
-    }
+    
     .botao{
       width: 90%;
         margin-left: 13px;
@@ -326,15 +394,10 @@ footer p{
     .blocos{
         margin-left: 13px;
     }
-    #about{
-       
-        height: auto;
-    }
     #about p{
-         text-align: justify;
-        font-size: 15px;
-      margin: 0px 0 10px 0;
+       font-size: 18px;
     }
+  
     
     .porcentagem{
         font-size: 100%;
@@ -372,15 +435,37 @@ footer p{
 }
 
 @media (min-width:480px) and (max-width:597px){
+    .iniciar, texto{
+            animation-duration: 1.7s;
+    }
      body{
         background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
     }
     header{
-        margin-left: 13px;
+        margin-left: 26px;
+
     }
-    .fa-2x{
-       margin-bottom: 60px;
+        header img{
+            float: left;
+        
+       
     }
+     nav li a[href="#con"]{
+        position: absolute;
+        visibility: hidden;
+    }
+     nav li a[href="#con"] i{
+        position:static;
+        visibility: visible;
+         color: #fff;
+         font-size: 150%;
+        margin: -5% 0 0 350%;
+    }
+    h1{
+        position: absolute;
+        visibility: hidden;
+    }
+   
     .sub-icon{
       margin-left: 40%;
     }
@@ -397,7 +482,7 @@ footer p{
     }
     footer{
         text-align-last: center;
-          margin-left: 13px;
+          margin-left: 26px;
     }
     footer ul li{
         float: none;
@@ -413,23 +498,92 @@ footer p{
 }
 }
 
-@media (max-width: 598px) { 
-
+@media (min-width: 598px) and (max-width:767px) { 
+.iniciar, texto{
+            animation-duration: 1.7s;
+    }
+     body{
+        background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
+    }
+    header{
+         margin-left: 26px;
+    }
+    
+    header img{
+        
+            float: left;
+       
+    }
+     nav li a[href="#con"]{
+        position: absolute;
+        visibility: hidden;
+    }
+     nav li a[href="#con"] i{
+        position:static;
+        visibility: visible;
+         font-size: 190%;
+         color:#fff;
+        margin: -5% 0 0 400%;
+    }
+    h1{
+        position: absolute;
+        visibility: hidden;
+    }
+   
+    
+    .sub-icon{
+      margin-left: 43%;
+    }
+    .blocos{
+        margin-left: 13px;
+    }
+     .botao{
+      width: 93%;
+        margin-left: 13px;
+    }
+       footer address{
+       
+        text-align: center;
+    }
+    footer{
+        text-align-last: center;
+        margin-left: 26px;
+    }
+    footer ul li{
+        float: none;
+        display: inline-block;
+        align-items: center;
+    }
+    footer p{
+        margin: 0;
+   
+    font-size:100%;
+    text-align: center;
+         
+}
 }
 
 
-//Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { 
-
-
- 
+@media (min-width: 768px) and (max-width: 908px) {
+     body{
+        background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
+    }
+    header img{ position: absolute;
+    visibility: hidden;}
+    nav li a[href="#con"]{
+        position: absolute;
+        visibility: hidden;
+    }
+       nav li a[href="#con"] i{
+        position:static;
+        visibility: visible;
+         font-size: 200%;
+           color:#fff;
+        margin: -35% 0 0 100px;
+    }
+    h1{margin-left:-25%;}
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+

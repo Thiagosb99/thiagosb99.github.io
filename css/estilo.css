@@ -2,6 +2,55 @@
 padding: 0;
 margin: 0;}
 
+
+
+.slider {
+  position: relative;
+  height: 250px;
+  width: 100%;
+   background-color:  rgb(112,128,144,0.0);
+  overflow:hidden;
+}
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.slide h2 {
+position: static;
+ font-size: 80px;
+  color: white;
+}
+.slider p {
+  position: static;
+
+  color: white;
+}
+.slide {
+    transform: translateX(100%);
+ -webkit-animation: slide 10s infinite linear;
+}
+.slide:nth-child(1) h2{
+ margin-top: 50px;
+}
+.slide:nth-child(2) {
+  -webkit-animation-delay: 5s;
+}
+
+@-webkit-keyframes slide {
+  
+    20%, 50%{
+       transform: translateX(0); /* 5s 10s 14s 19s */
+    }
+    
+    70%, 100% {
+    transform: translateX(-100%);
+      
+  }    
+}
+
+
+
 /*-----------------------cair */
 .hope{
     padding-right: 30px;
@@ -352,6 +401,7 @@ footer p{
 
 /*-------------MEDIAS ------------------------------*/
 
+
 @media (min-width:250px) and (max-width:479px){
    .iniciar, texto{
             animation-duration: 1.7s;
@@ -366,6 +416,16 @@ footer p{
       
         width: 100%;
     }
+    .slide h2 {
+ font-size:350%;
+
+}.slide:nth-child(2) h2{
+ margin-top: 25px;
+    font-size:250%;
+}
+.slide p{
+   font-size: 100%;
+}
     header img{
         position: absolute;
         visibility: hidden;  
@@ -490,6 +550,13 @@ footer p{
         position: absolute;
         visibility: hidden;
     }
+    .slide:nth-child(2) h2{
+ margin-top: 25px;
+    font-size:300%;
+}
+.slide p{
+   font-size: 100%;
+}
     #skills{
         margin-top: 25px;
     }
@@ -686,7 +753,7 @@ margin-top: -110px;
        border: none;
        background-color: rgb(112,128,144,0.3);
        height: 100px;
-         font-size:220%;
+        font-size:220%;
 margin-top: -110px;
        
     }
@@ -713,6 +780,17 @@ margin-top: -110px;
     
 }
 
+@media (min-width:1007.1px){
+    .slide:nth-child(2) h2{
+ margin-top: 25px;
+    font-size:350%;
+       
+}
+.slide p{
+   font-size: 100%;
+}
+    
+}
 
 
 

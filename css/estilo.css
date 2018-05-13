@@ -163,9 +163,9 @@ economica
   color: rgb(50,50,50);
   background-color: #fff;
   border-color:rgb(50,50,50);
-margin:0 55% 0 45%;
-    transition: all 0.1s;      
-  
+   margin-left: 45%;
+    
+    transition: all 0.1s; 
 }
 .sub-icon:hover{
      color: #fff;
@@ -198,6 +198,9 @@ margin:0 55% 0 45%;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+      transition-timing-function: linear;
+    transition-duration: 0.6s;
+    transition-delay: 0.1s;
     
     
  color: #fff;
@@ -208,9 +211,7 @@ margin:0 55% 0 45%;
      color: rgb(169,169,169);
   background-color: #fff;
   border-color: yellow;
-        transition-timing-function: linear;
-    transition-duration: 0.6s;
-    transition-delay: 0.1s;
+      
 }
 .barra{
   width: 100%;
@@ -220,7 +221,7 @@ margin:0 55% 0 45%;
   color: #fff;
   text-align: right;
   background-color: rgb(855,855,0,0.2);
-    margin: 5px 0;
+    margin: 5px 5px;
     border-radius: 3px;
 }
 .porcentagem{
@@ -237,7 +238,7 @@ margin:0 55% 0 45%;
 
 /*Blocos -----------------------*/
 .blocos{
-    padding: 50px 10px 0 20px;
+    padding: 50px 10px 0 0px;
     height: auto;
     width: 100%;
     background-color: rgb(112,128,144,0.1);
@@ -278,6 +279,7 @@ p{
     font-family: 'oswald', sans-serif;
 }
 #about p {
+    padding-left: 20px;
   text-align: left;
     font-size: 22px;
     opacity: 0.8; 
@@ -353,18 +355,15 @@ footer p{
 @media (min-width:250px) and (max-width:479px){
    .iniciar, texto{
             animation-duration: 1.7s;
-       
     }
-
+    .cair{
+        animation: none;
+    }
     body{
         background-image: url(https://thiagosb99.github.io/img/wall-xs.jpg);
-        padding-right:8%;
-        align-items: center;
-        padding-left:8%;
     }
     header{
-          background-color: rgb(169,169,169,0.0);
-        border-radius: 5px;
+      
         width: 100%;
     }
     header img{
@@ -394,36 +393,47 @@ footer p{
     text-align: justify;
  
     }
-    
+   
    .botao{
-      width: 90%;
+      width: 100%;
+       border: none;
+       background-color: rgb(112,128,144,0.3);
+       height: 80px;
+       margin-top: -95px;
        
     }
-   
-    #about p{
-       font-size: 18px;
-        
-          
+    .icone{ 
+        left: 0;
+      
     }
     .blocos{
-          background-color: rgb(169,169,169,0.0);
-    box-shadow: none;
+           background-color: rgb(112,128,144,0.0);
+        box-shadow: none;
+    }
+    section{
+        
+     background-color: rgb(112,128,144,0.1);
+    }
+    #about p{
+    
+       font-size: 18px;
+    }
+    #skills{
+        margin-top: 25px;
     }
     
     .porcentagem{
         font-size: 100%;
         color: rgb(855,855,0,0.0);
     }
-    #skills{
-        align-items: center;
-    }
+    
     
     .sub-icon{
-      margin-left: 35%;
+      margin-left: 40%;
     }
     footer{
         width: 100%;
-             background-color: rgb(169,169,169,0.0);
+         
         text-align-last: center;
     }
     footer address{
@@ -435,6 +445,7 @@ footer p{
         float: none;
         display: inline-block;
         align-items: center;
+          font-size: 70%;
     }
     footer p{
         margin: 0;
@@ -449,11 +460,14 @@ footer p{
     .iniciar, texto{
             animation-duration: 1.7s;
     }
+    .cair{
+        animation: none;
+    }
      body{
         background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
     }
     header{
-        margin-left: 26px;
+       
 
     }
         header img{
@@ -469,37 +483,54 @@ footer p{
         position:static;
         visibility: visible;
          color: #fff;
-         font-size: 150%;
-        margin: -5% 0 0 350%;
+         font-size: 200%;
+        margin: -5% 0 0 290%;
     }
     h1{
         position: absolute;
         visibility: hidden;
     }
-   
+    #skills{
+        margin-top: 25px;
+    }
     .sub-icon{
-      margin-left: 40%;
+      margin-left: 43%;
     }
     .blocos{
-        margin-left: 13px;
+           background-color: rgb(112,128,144,0.0);
+        box-shadow: none;
     }
+    section{
+        
+     background-color: rgb(112,128,144,0.1);
+    }
+    
      .botao{
-      width: 90%;
-        margin-left: 13px;
+      width: 100%;
+       border: none;
+       background-color: rgb(112,128,144,0.3);
+       height: 80px;
+margin-top: -95px;
+       
     }
+    .icone{ 
+        left: 0;
+      
+    }
+    
        footer address{
        
         text-align: center;
     }
     footer{
-       
         text-align-last: center;
-          margin-left: 26px;
+          
     }
     footer ul li{
         float: none;
         display: inline-block;
         align-items: center;
+        font-size: 150%;
     }
     footer p{
         margin: 0;
@@ -518,7 +549,7 @@ footer p{
         background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
     }
     header{
-         margin-left: 26px;
+         
     }
     
     header img{
@@ -541,35 +572,70 @@ footer p{
         position: absolute;
         visibility: hidden;
     }
-   
-    
+    /*----*/
+     #skills, #about{
+        margin-top: 100px;
+         height: auto;  
+    }
+     .blocos{
+           background-color: rgb(112,128,144,0.0);
+        box-shadow: none;
+    }
     .sub-icon{
       margin-left: 43%;
+        font-size: 130%;
+        height: 100px;
+        width: 100px;
     }
-    .blocos{
-        margin-left: 13px;
+    .barra, .porcentagem{
+        height: 50px;
+        font-size: 30px;
+         
     }
+    .porcentagem{
+        padding: 13px  8px 0 0;
+    }
+    #about p{
+        font-size: 150%;
+    }
+       section{
+        
+     background-color: rgb(112,128,144,0.1);
+    }
+    
      .botao{
-      width: 93%;
-        margin-left: 13px;
-    }
-       footer address{
+      width: 100%;
+       border: none;
+       background-color: rgb(112,128,144,0.3);
+       height: 100px;
+         font-size:220%;
+margin-top: -110px;
        
+    }
+    .icone{ 
+        left: 0;
+      
+    }
+    /*-----*/
+       footer address{
+       font-size:150%;
         text-align: center;
     }
+    
     footer{
         text-align-last: center;
-        margin-left: 26px;
+       
     }
     footer ul li{
         float: none;
         display: inline-block;
         align-items: center;
+        font-size: 150%;
     }
     footer p{
         margin: 0;
    
-    font-size:100%;
+    font-size:150%;
     text-align: center;
          
 }
@@ -585,6 +651,48 @@ footer p{
     nav li a[href="#con"]{
         position: absolute;
         visibility: hidden;
+    }   #skills, #about{
+        margin-top: 100px;
+         height: auto;  
+    }
+     .blocos{
+           background-color: rgb(112,128,144,0.0);
+        box-shadow: none;
+    }
+    .sub-icon{
+      margin-left: 43%;
+        font-size: 130%;
+        height: 100px;
+        width: 100px;
+    }
+    .barra, .porcentagem{
+        height: 50px;
+        font-size: 30px;
+         
+    }
+    .porcentagem{
+        padding: 13px  8px 0 0;
+    }
+    #about p, #about i{
+        font-size: 170%;
+    }
+       section{
+        
+     background-color: rgb(112,128,144,0.1);
+    }
+    
+     .botao{
+      width: 100%;
+       border: none;
+       background-color: rgb(112,128,144,0.3);
+       height: 100px;
+         font-size:220%;
+margin-top: -110px;
+       
+    }
+    .icone{ 
+        left: 0;
+      
     }
        nav li a[href="#con"] i{
         position:static;
@@ -594,7 +702,17 @@ footer p{
         margin: -35% 0 0 100px;
     }
     h1{margin-left:-25%;}
+    footer ul li, footer address{
+                font-size: 150%;
+    }
+    footer p{
+         font-size: 120%;
+    }
+    
+    
+    
 }
+
 
 
 

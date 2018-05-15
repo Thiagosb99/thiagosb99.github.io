@@ -1,7 +1,6 @@
 var corpovar= document.getElementById("corpo");
 var img;
 var cont=0;
-var iniciar =document.getElementsByClassName("barra");
 var olha = parseFloat(document.getElementById("about").offsetHeight)+ parseFloat(document.getElementById("cabecalho").offsetHeight);
 
     function load(){

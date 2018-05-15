@@ -28,7 +28,7 @@ var olha = parseFloat(document.getElementById("about").offsetHeight)+ parseFloat
                   if(screen.width>="250" && screen.width<="1023"){
                       img = ["https://thiagosb99.github.io/img/alcelua.jpg","https://thiagosb99.github.io/img/balanco.jpg","https://thiagosb99.github.io/img/saturno.jpg"];
                   }if(screen.width>="1024"){
-                      img = ["https://thiagosb99.github.io/img/luadark.jpg","ihttps://thiagosb99.github.io/img/samurai.jpg","https://thiagosb99.github.io/img/wall4.jpg"]; 
+                      img = ["https://thiagosb99.github.io/img/luadark.jpg","https://thiagosb99.github.io/img/samurai.jpg","https://thiagosb99.github.io/img/wall4.jpg"]; 
                   }
                   if(cont>= img.length){
                     cont =0;

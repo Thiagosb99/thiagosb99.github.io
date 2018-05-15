@@ -6,12 +6,12 @@ var olha = parseFloat(document.getElementById("about").offsetHeight)+ parseFloat
 
     function load(){
                     if(screen.width>="250" && screen.width<="1023"){
-                        corpovar.style.backgroundImage="url(img/saturno.jpg)";
+                        corpovar.style.backgroundImage="url(https://thiagosb99.github.io/img/saturno.jpg)";
                         addclasse();
                      
                         
                     }else if(screen.width>="1024"){
-                        corpovar.style.backgroundImage="url(img/wall4.jpg)";
+                        corpovar.style.backgroundImage="url(https://thiagosb99.github.io/img/wall4.jpg)";
                         addclasse();
                         
                     }
@@ -26,9 +26,9 @@ var olha = parseFloat(document.getElementById("about").offsetHeight)+ parseFloat
 
     function changeimg () {
                   if(screen.width>="250" && screen.width<="1023"){
-                      img = ["img/alcelua.jpg","img/balanco.jpg","img/saturno.jpg"];
+                      img = ["https://thiagosb99.github.io/img/alcelua.jpg","https://thiagosb99.github.io/img/balanco.jpg","https://thiagosb99.github.io/img/saturno.jpg"];
                   }if(screen.width>="1024"){
-                      img = ["img/luadark.jpg","img/samurai.jpg","img/wall4.jpg"]; 
+                      img = ["https://thiagosb99.github.io/img/luadark.jpg","ihttps://thiagosb99.github.io/img/samurai.jpg","https://thiagosb99.github.io/img/wall4.jpg"]; 
                   }
                   if(cont>= img.length){
                     cont =0;

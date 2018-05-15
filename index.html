@@ -1,115 +1,127 @@
 <!DOCTYPE html>
 <html>
-     <head>
+
+  <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://thiagosb99.github.io/css/estilo.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Economica|Source+Sans+Pro|Oswald" rel="stylesheet">
-        <title>Thiago Barbosa</title>
+        <title>TH - Home</title>
     </head>
-    
-    <body style="background-color: rgb(112,128,144,0.1)" >
-        <header class="iniciar t2" >
-            <div class="container">
-                <div class="row">
-                    <div class=" col-sm-2 col-md-2">
-                        <img class="sl t1"src="img/perfil.png">
-                    </div>
+
+<body id="corpo" onload="load()">
+   
+<header id="cabecalho" class="iniciar t2"  >
+        <div class="container">
+
+            <div class="row">
+                <div class=" col-sm-2 col-md-2">
+                    <img id="perfil" class="sl t1"src="img/myself.jpg" alt="Foto de perfil">
+                </div>
+
                 <div class="col-xs-8 col-sm-6 col-md-6">
-                         <h1 class="text-left">Thiago dos Santos Barbosa </h1>
+                    <h1 class="text-left">Thiago dos Santos Barbosa </h1>
                 </div>
-                    <div class=" col-sm-4 col-md-4">
-                        <nav>
-                        <li class="text-left"><a href="#con">|Contato</a></li>
-                        </nav>
-                    </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4">
-                        <nav>
-                        <li class="text-left"><a href="#con"><i class="fas fa-envelope-square fa-3x"></i></a></li>
-                        </nav>
-                    </div>
-                 </div>
+
+                <div class=" col-sm-4 col-md-4">
+                    <nav>
+                        <li class="text-left" id="contato"><a href="#con">|Contato</a></li>
+                    </nav>
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-4">
+                    <nav>
+                    <li><a href="#con"><i class="fas fa-envelope-square fa-3x"></i></a></li>
+                    </nav>
+
+                </div>
+
             </div>
-        </header>
+        </div> 
+ </header>
         
-       <section class="container " style="background-color: none; ">
-        <div class="row">
-           <div class="col-md-6">
-               <div id="start"  class="blocos texto">
+
+<section class="container">
+
+    <div class="row">
+
+        <div class="col-xs-12 col-md-6">
+
+        <div id="start"  class="blocos texto">
                     
-                  <div class="slider">
-                          <div class="slide">
-                            
-                            <h2>Bem-vindo(a)</h2>
+            <div class="slider">
 
-                            
-                          </div>
-                          <div class="slide">
-                            
-                             <h2>Olá, sou Thiago,</h2>
-
-                            <p>tenho 18 anos, cursando ensino superior e nas horas vagas sou desenvolvedor web.</p>
-                          </div>
+                <div class="slide">  
+                    <h2>Bem-vindo(a)</h2> 
+                </div>
+                <div class="slide">
+                    <h2>Olá, sou Thiago,</h2>
+                    <p>tenho 18 anos, cursando ensino superior e nas horas vagas sou desenvolvedor web.</p>
+                </div>
                          
-                    </div>
-               </div>
+            </div>
 
-                <div id ="about" class="texto blocos ">
-             <button  class="botao icone">
-                   <i class="fas fa-info-circle fa-lg "></i> About me
-                     </button>
+        </div>
+
+        <div id ="about" class="blocos" onclick="shows()">
+
+            <button  class="botao icone">
+                <i class="fas fa-info-circle fa-lg "></i> Sobre mim
+            </button>
+
+                <p><i class="fas fa-arrow-alt-circle-right"></i>Cursei ensino médio integrado com técnologia da informação;</p>
+                <p><i class="fas fa-arrow-alt-circle-right"></i>Desenvolvo páginas por hobby desde 2015;</p>
+                <p><i class="fas fa-arrow-alt-circle-right"></i>90% do que eu sei sobre desenvolvimento Web eu aprendi estudando por conta própria e atráves disso consegui melhorar um pouco meu inglês;</p>
+                <p><i class="fas fa-arrow-alt-circle-right"></i>tenho conhecimento em algumas linguagens de programação back-end;</p>
                   
-                      
-                       
-                             <p><i class="fas fa-arrow-alt-circle-right"></i>hi my name is Norman. olá meu nome é norman;</p>
-                             <p><i class="fas fa-arrow-alt-circle-right"></i>hi my name is Norman. olá meu nome é norman;</p>
-                             <p><i class="fas fa-arrow-alt-circle-right"></i>hi my name is Norman. olá meu nome é norman;</p>
-                             <p><i class="fas fa-arrow-alt-circle-right"></i>hi my name is Norman. olá meu nome é norman;</p>
-                             <p><i class="fas fa-arrow-alt-circle-right"></i>hi my name is Norman. olá meu nome é norman;</p>
-                  
-               </div>
-            </div>
-            <div class="col-md-6">
-                <div id="skills" class="blocos" >
-                            <button class="botao icone"><i class="fa fa-code "></i> SKILLS</button>
-                            <button class=" cair t1 sub-icon" ><i class="fab fa-html5 fa-4x"></i></button> 
+        </div>
+
+        </div>
+
+        <div class="col-xs-12 col-md-6 ">
+            <div id="skills" class="blocos " >
+
+                <button class="botao icone"><i class="fa fa-code "></i> SKILLS</button>
+
+                <button class="t1 cair sub-icon" ><i class="fab fa-html5 fa-4x"></i></button>
+                    <div class="barra"  role="progressbar"><div class="porcentagem" style="width: 50%;">HTML 50%</div></div>
                     
-                                <div class="barra t1 iniciar"  role="progressbar"><div class="porcentagem" style="width: 50%;">HTML 50%</div></div>
-                    
-                            <button class=" cair t2 sub-icon" ><i class="fab fa-css3-alt fa-4x"></i></button>
-                       <div class="barra t2 iniciar"  role="progressbar"><div class="porcentagem" style="width: 60%;">CSS 60%</div></div>
+                <button class=" cair t2 sub-icon" ><i class="fab fa-css3-alt fa-4x"></i></button>
+                    <div class="barra"  role="progressbar"><div class="porcentagem" style="width: 60%;">CSS 60%</div></div>
                            
-                            <button class=" cair t3 sub-icon" ><i class="fab fa-php fa-4x" ></i></button>
-                       <div class="barra t3 iniciar"  role="progressbar"><div class="porcentagem" style="width: 20%;">PHP 20%</div></div>
+                <button class=" cair t3 sub-icon" ><i class="fab fa-js-square fa-3x" ></i></button>
+                    <div class="barra"  role="progressbar"><div class="porcentagem" style="width: 20%;">JS 20%</div></div>
                     
-                            <button class="cair t4 sub-icon" ><i class="fab fa-lg fa-3x" style="font-family: 'arial'">C#</i></button>
-                     <div class="barra t4 iniciar"  role="progressbar"><div class="porcentagem" style="width: 40%;">C# 40%</div></div>
+                <button class="cair t4 sub-icon" ><i class="fab fa-lg fa-3x" style="font-family: 'arial'">C#</i></button>
+                    <div class="barra"  role="progressbar"><div class="porcentagem" style="width: 40%;">C# 40%</div></div>
                     
-                            <button class="cair t5 sub-icon" title="LÓGICA DE PROGRAMAÇÃO" ><i class="fas fa-cogs fa-3x" ></i></button>
-                       <div class="barra t5 iniciar"  role="progressbar"><div class="porcentagem" style="width: 70%;">Lógica de Programação 70%</div></div>
-                </div>
+                <button class="cair t5 sub-icon" title="LÓGICA DE PROGRAMAÇÃO" ><i class="fas fa-cogs fa-3x" ></i></button>
+                    <div class="barra"  role="progressbar"><div class="porcentagem" style="width: 70%;">Lógica de Programação 70%</div></div>
+
+            </div>
               
-            </div>
+        </div>
            
-           </div>
+    </div>
         
-        </section>
-        <footer >
-            <div class="container ">
-                  <address id="con">E-mail: thiagosb99@gmail.com</address>
-                <ul>
-                 <li ><a href="#"><i class="fab fa-linkedin fa-5x"></i></a></li>
-                 <li><a href="https://github.com/Thiagosb99"><i class="fab fa-github fa-5x"></i></a></li>
+</section>
+
+
+<footer>
+    <div class="container ">
+
+        <address id="con">E-mail: thiagosb99@gmail.com</address>
+            <ul>
+                <li ><a href="#"><i class="fab fa-linkedin fa-5x"></i></a></li>
+                <li><a href="https://github.com/Thiagosb99"><i class="fab fa-github fa-5x"></i></a></li>
                 <li><a href="https://www.facebook.com/thiagowond"><i class="fab fa-facebook fa-5x"></i></a></li>
-                    </ul>
+            </ul>
                 <p>Copyright © 2018 | Thiago dos Santos Barbosa</p>
-            </div>
-        </footer>
-        
-        <script src="bootstrap/js/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-       
-    </body>
+    </div>
+</footer>
+
+         <script src="javascript.js"></script>
+</body>
 </html>

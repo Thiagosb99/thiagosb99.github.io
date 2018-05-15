@@ -43,14 +43,20 @@ var olha = parseFloat(document.getElementById("about").offsetHeight)+ parseFloat
           
     window.onscroll = function teste (){
     if(screen.width>="250" && screen.width<="1023")
-    {
+    { 
         if(document.body.scrollTop > olha || document.documentElement.scrollTop > olha)
         {
             for(var i=0; i<=4;i++)
-            { 
-                iniciar[i].classList.add('iniciar');
+            {  
+                 document.getElementsByClassName("porcentagem")[i].className='mobile porcentagem';
+                document.getElementsByClassName("barra")[i].className='barra mobile';
             }
              
+        }else{
+            for(var i=0;i<=4;i++){
+                document.getElementsByClassName("porcentagem")[i].classList.remove('mobile');
+                document.getElementsByClassName("barra")[i].classList.remove('mobile');
+            }
         }
         }
         }

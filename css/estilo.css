@@ -3,396 +3,316 @@ padding: 0;
 margin: 0;}
 
 
+#corpo{
+    background-image: url(https://thiagosb99.github.io/img/wall4.jpg);
+    background-repeat: no-repeat;
+			-webkit-transition: background 0.1s;
+				-moz-transition: background 0.1s;
+		transition: background 2.5s;
 
-.slider {
-  position: relative;
-  height: 250px;
-  width: 100%;
-   background-color:  rgb(112,128,144,0.0);
-  overflow:hidden;
 }
-.slide {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-.slide h2 {
-position: static;
- font-size: 80px;
-  color: white;
-}
-.slider p {
-  position: static;
 
-  color: white;
-}
-.slide {
-    transform: translateX(100%);
- -webkit-animation: slide 10s infinite linear;
-}
-.slide:nth-child(1) h2{
- margin-top: 50px;
-}
-.slide:nth-child(2) {
-  -webkit-animation-delay: 5s;
-}
+
+/* ==========================================================================
+  			ANIMACOES
+   ========================================================================== */
+
+
+/*slide*/
+
 
 @-webkit-keyframes slide {
-  
-    20%, 50%{
-       transform: translateX(0); /* 5s 10s 14s 19s */
+	
+		20%, 50%{
+				transform: translateX(0); /* 5s 10s 14s 19s */
+		}
+		
+		70%, 100% {
+		transform: translateX(-100%);
+			
+	}    
+}
+
+.slider {
+	position: relative;
+	height: 250px;
+	width: 100%;
+	background-color:  rgb(112,128,144,0.0);
+	overflow:hidden;}
+
+.slide {
+	position: absolute;
+	height: 100%;
+	width: 100%;}
+
+.slide h2 {
+position: static;
+	font-size: 80px;
+	color: white;}
+
+
+.slider p {
+	position: static;
+	color: white;}
+
+.slide {
+		transform: translateX(100%);
+	-webkit-animation: slide 10s infinite linear;}
+
+.slide:nth-child(1) h2{
+	margin-top: 50px;}
+
+.slide:nth-child(2) {
+	-webkit-animation-delay: 5s;}
+
+
+	/*cair*/
+
+@keyframes cair { 
+    0%{
+        margin-top: -500px;
     }
-    
-    70%, 100% {
-    transform: translateX(-100%);
-      
-  }    
+    100%{
+        margin-top: 0;
+    }
 }
-
-
-
-/*-----------------------cair */
-.hope{
-    padding-right: 30px;
-    padding-left: 30px;
-}
-
-@keyframes  cair{
-  from {
-      position: absolute;
-      margin-top: -80px;
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-  }
-
-  to {
-      position: static;
-      margin-top: 0;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 .cair{
-  animation-name: cair;
-    animation-timing-function: ease-in-out;
+	animation-name: cair;
+		animation-timing-function: ease-in-out;
 }
 .t1{
-    animation-duration: 0.5s;
+		animation-duration: 0.5s;
 }
 .t2{
-    animation-duration: 1s;
+		animation-duration: 1s;
 }.t3{
-    animation-duration: 1.5s;
+		animation-duration: 1.5s;
 }.t4{
-    animation-duration: 2s;
+		animation-duration: 2s;
 }.t5{
-    animation-duration: 2.5s;
+		animation-duration: 2.5s;
 }
 
-
-/*-------teste------------*/
-/*
-@-webkit-keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; } 
-}
-@-moz-keyframes fadeIn {
-0% { opacity: 0;}
-100% { opacity: 1; }
-}
-@-o-keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
-}
-@keyframes fadeIn {
-    0%{opacity: 0;}    
-100% { opacity: 1;}  
-}
-
-.fadeIn {
--webkit-animation: fadeIn 1s ease-in-out;
--moz-animation: fadeIn 1s ease-in-out;
--o-animation: fadeIn 1s ease-in-out;
-animation: fadeIn 1s ease-in-out;
-}
-*/
-
+/*texto*/
 @keyframes texto{
-    0%{margin-left: -1000px; opacity: 0;}
-   
-    100%{margin-left:0px; opacity: 1;}
-}
-
-@keyframes iniciar{
-    0%{margin-left: 500px; opacity: 0;}
-   
-    100%{margin-left:0px; opacity: 1;}
+		0%{margin-left: -1000px; opacity: 0;}
+		
+		100%{margin-left:0px; opacity: 1;}
 }
 
 .texto{
-   animation: texto 1.3s ease-in-out; 
+		animation: texto 1.3s ease-in-out; 
 }
+
+/*iniciar*/
+
+@keyframes iniciar{
+		0%{margin-left: 500px; opacity: 0;
+			font-family:}
+		
+		100%{margin-left:0px; opacity: 1;}
+}
+
+
 .iniciar{
 animation-name: iniciar  ;
-    animation-timing-function: ease-in-out;
-}
-body{
-    background-image: url(https://thiagosb99.github.io/img/wall4.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
+		animation-timing-function: ease-in-out;
 }
 
-/*header*/
+
+/* ==========================================================================
+				HEADER
+   ========================================================================== */
 
 header{
-    background-color: rgb(169,169,169,0.2);
-    margin-bottom: 10px;
-    padding: 25px 0;
+		background-color: rgb(169,169,169,0.2);
+		margin-bottom: 10px;
+		padding: 25px 0;}
 
-}
 header .container img{
-    width: 100px;
-    height: 120px;
-    border-radius: 5px;
-  
-}
+		width: 100px;
+		height: 120px;
+		border-radius: 5px;}
 
 h1{
-    margin-top: 15px;
-    font-weight: none;
-    font-size: 50px;
-    font-family: 'economica', sans-serif;
-    color: #fff;
-}
+		margin-top: 25px;
+		font: 50px 'economica', sans-serif ;
+		color: #fff;}
+
 nav li a{
-    transition-timing-function: ease;
-    transition-duration: 0.5s;
-    color: rgb(250,250,0,0.5);
-}
+		transition: 0.5s ease;
+		color: rgb(250,250,0,0.5);}
+
 nav li{
-   
-     margin-top: 10px;
-    font-weight: none;
-    font-size: 50px;
-    font-family: 'economica', sans-serif;
-    color: #fff;
-    list-style: none;
-}
+			margin-top: 25px;
+		font: 50px 'economica', sans-serif;
+		color: #fff;
+		list-style: none;}
+
 nav li a:hover{
-    
-    
-    color: rgb(250,250,0);
-    text-decoration: none;
-}
-  nav li a[href="#con"] i{
-     visibility: hidden;
-      position: absolute;
-    }
+		color: rgb(250,250,0);
+		text-decoration: none;}
 
-/*do dyeon
-Righteous
+	nav li a[href="#con"] i{
+			visibility: hidden;
+			position: absolute;
+		}
 
-Orbitron
-economica
-*/
-
-/*end header---------------------*/
-
-
-/*Icons e barra----------------------------------*/
-.sub-icon{
-  width: 75px;
-  height: 75px;
-    /*btn-custom*/
-  border: 2px solid ;
-  border-radius: 360px;
-  color: rgb(50,50,50);
-  background-color: #fff;
-  border-color:rgb(50,50,50);
-   margin-left: 45%;
-    
-    transition: all 0.1s; 
-}
-.sub-icon:hover{
-     color: #fff;
-  background-color:rgb(50,50,50);
-     transform: scale(1.5);
-}
-.icone{
-    position: absolute;
-    margin-top: -70px;
-    left: 20px;
-}
-.botao{
-  display: inline-block;
-  padding: 10px 20px;
-  margin-bottom: 0;
-  font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-      transition-timing-function: linear;
-    transition-duration: 0.6s;
-    transition-delay: 0.1s;
-    
-    
- color: #fff;
-  background-color: rgb(169,169,169,0.7);
-  border-color: yellow;    
-}
-.botao:hover{
-     color: rgb(169,169,169);
-  background-color: #fff;
-  border-color: yellow;
-      
-}
-.barra{
-  width: 100%;
-  height: 35px;
-  font-size: 12px;
-  line-height: 25px;
-  color: #fff;
-  text-align: right;
-  background-color: rgb(855,855,0,0.2);
-    margin: 5px 5px;
-    border-radius: 3px;
-}
-.porcentagem{
-    width:0;
-    font-weight: bold;
-    border-radius: 3px;
-    font-family: 'economica',sans-serif;
-    font-size: 25px;
-    padding: 5px  5px 0 0;
-    height:35px;
-    background-color: rgb(855,855,0,0.7);
-}
-
-
-/*Blocos -----------------------*/
-.blocos{
-    padding: 50px 10px 0 0px;
-    height: auto;
-    width: 100%;
-    background-color: rgb(112,128,144,0.1);
-    margin: 50px 0;
-    border-radius: 10px;
-    box-shadow: 2px 5px 10px rgb(112,128,144,0.6);
-    
- /*
-    border-radius: 5px;
-    border: 1px blue;
-    border-style: outset inset outset  inset;
-   */   
-}
-p{
-        font-family: 'Source Sans Pro', sans-serif;
-        text-align: justify;
-        color: #fff;
-}
-.btn-info{
-    background-color: gray;
-}
-
-#skills{
-    margin-top: 130px;
-    height: 700px;
-
-}
-#start{
-    margin: none;
-    padding: 25px 0;
-    background-color: rgb(112,128,144,0.0);
-    box-shadow: none;
-    height: auto;
-}
-#start p{
-    font-size: 30px;
-    padding: 0 25px;
-    font-family: 'oswald', sans-serif;
-}
-#about p {
-    padding-left: 20px;
-  text-align: left;
-    font-size: 22px;
-    opacity: 0.8; 
-    margin: 0 0 30px 30px;
-}
-#about p i {
-    position: absolute;
-      margin-left: -40px;
-    font-size: 20px;
-    opacity: 1;
-    color: rgb(855,855,0,0.2);
-}
-.fa-arrow-alt-circle-right{
-    margin: 8px 25% 25px 25%;
-    color: rgb(500,500,500);
-}
+/*SECTION----------------------------------*/
 h2{
-    font: 40px  'oswald', sans-serif ;
-    color: #fff;
-    text-align: center;
+		font: 40px  'oswald', sans-serif ;
+		color: #fff;
+		text-align: center;
 }
 hr{
-    width: 70%;
-    margin: 10px 12% 20px 12%;
+		width: 70%;
+		margin: 10px 12% 20px 12%;
+}
+
+p{
+				font-family: 'Source Sans Pro', sans-serif;
+				text-align: justify;
+				color: #fff;}
+
+.blocos{
+		padding: 50px 10px 0 0px;
+		height: auto;
+		width: 100%;
+		background-color: rgb(112,128,144,0.1);
+		margin: 50px 0;
+		border-radius: 10px;
+		box-shadow: 2px 5px 10px rgb(112,128,144,0.6);
+}
+
+.botao{
+	padding: 15px 40px;
+	font: 20px 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 4px;
+	transition: 0.6s linear;
+	color: #fff;
+	background-color: rgb(169,169,169,0.7);
+}
+.botao:hover{
+			color: gray;
+		background-color: #fff;	}
+
+.sub-icon{
+	width: 75px;
+	height: 75px;
+	border: 2px solid ;
+	border-radius: 360px;
+	color: #323232;
+	background-color: #fff;
+	border-color:#323232;
+	margin-left: 45%;	
+ transition: all 0.1s; 
+}
+.sub-icon:hover{
+	color: #fff;
+	background-color:#323232;
+	transform: scale(1.5);}
+
+.icone{
+		position: absolute;
+		margin-top: -70px;
+		left: 20px;
+}
+.barra{
+	width: 100%;
+	height: 35px;
+	font-size: 12px;
+	line-height: 25px;
+	color: #fff;
+	text-align: right;
+	background-color: rgb(855,855,0,0.2);
+	margin: 5px 5px;
+	border-radius: 3px;
+}
+
+.porcentagem{
+		font-weight: bold;
+		border-radius: 3px;
+		font-family: 'economica',sans-serif;
+		font-size: 25px;
+		padding: 5px  5px 0 0;
+		height:35px;
+		background-color: rgb(855,855,0,0.7);
 }
 
 
+/*IDS -----------------------*/
+
+#skills{
+		margin-top: 130px;
+		height: 700px;
+}
+#start{
+		padding: 25px 0;
+		background-color:inherit;
+		box-shadow: none;
+		height: auto;
+	}
+#start p{
+		font-size: 30px;
+		padding: 0 25px;
+		font-family: 'oswald', sans-serif;
+}
+#about{
+	height: 420px;
+}
+#about p {
+		padding-left: 20px;
+		text-align: justify;
+		font-size: 22px;
+		opacity: 0.8; 
+		margin: 0 0 30px 30px;
+}
+#about p i {
+		position: absolute;
+		margin: 5px 0 0 -40px;
+		font-size: 25px;
+		color: #fff;
+}
 
 
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
 
-/*footer---------------------------*/
 footer{
-    background-color: rgb(169,169,169,0.2);
-    padding: 10px 0 10px 0;
+		background-color:rgb(169,169,169,0.2);
+		padding: 10px 0 10px 0;
 
 }
 footer address{
-        font-size:17px;
-        text-decoration: underline;
-        font-family: 'open sans','arial',sans-serif;
-        color: rgb(255,255,255,0.6);
+				font-size:17px;
+				text-decoration: underline;
+				font-family: 'open sans','arial',sans-serif;
+				color: rgb(255,255,255,0.6);
 }
 footer a{
-    display: block;
+		display: block;
 }
 footer i:hover{
-    color:#fff;
+		color:#fff;
 }
 footer i{
-    transition-timing-function: linear;
-    transition-duration: 0.6s;
-    transition-delay: 0.1s;    
-    color: rgb(255,255,255,0.4);
-    margin: 0 7px;
+		transition: 0.6s linear;  
+		color: rgb(255,255,255,0.4);
+		margin: 0 7px;
 }
- footer ul li{
-        display: inline-block;
-    }
+	footer ul li{
+				display: inline-block;
+		}
 footer p{
-    margin: -30px 0 0 0;
-    font-size:16px;
-    font-family: 'arial';
-    text-align: right;
-    color: rgb(255,255,255,0.4)
+		margin: -30px 0 0 0;
+		font-size:16px;
+		font-family: 'arial';
+		text-align: right;
+		color: rgb(255,255,255,0.4)
 }
 
 
@@ -401,396 +321,406 @@ footer p{
 
 /*-------------MEDIAS ------------------------------*/
 
-
 @media (min-width:250px) and (max-width:479px){
-   .iniciar, texto{
-            animation-duration: 1.7s;
-    }
+		.iniciar, texto{
+						animation-duration: 1.7s;
+		}
     .cair{
         animation: none;
     }
-    body{
-        background-image: url(https://thiagosb99.github.io/img/wall-xs.jpg);
-    }
-    header{
-      
-        width: 100%;
-    }
-    .slide h2 {
- font-size:350%;
+	#corpo{
+				background-image: url(img/alcelua.jpg);
+		}
+		header{
+			
+				width: 100%;
+		}
+		.slide h2 {
+	font-size:350%;
 
 }.slide:nth-child(2) h2{
- margin-top: 25px;
-    font-size:250%;
+	margin-top: 25px;
+		font-size:250%;
 }
 .slide p{
-   font-size: 100%;
+		font-size: 100%;
 }
-    header img{
-        position: absolute;
-        visibility: hidden;  
-    }
-    h1{
-        font-size: 20px;
-    }
-    h2{
-      margin-top: -50px;
-    }
-    nav li a[href="#con"]{
-        position: absolute;
-        visibility: hidden;
-    }
-     nav li a[href="#con"] i{
-        position:static;
-        visibility: visible;
-        margin: -45% 0 0 0;
-    }
-    nav li{
-        font-size:20px;
-    }
-    #start p{
-    font-size: 23px;
-    text-align: justify;
- 
-    }
-   
-   .botao{
-      width: 100%;
-       border: none;
-       background-color: rgb(112,128,144,0.3);
-       height: 80px;
-       margin-top: -95px;
-       
-    }
-    .icone{ 
-        left: 0;
-      
-    }
-    .blocos{
-           background-color: rgb(112,128,144,0.0);
-        box-shadow: none;
-    }
-    section{
-        
-     background-color: rgb(112,128,144,0.1);
-    }
-    #about p{
-    
-       font-size: 18px;
-    }
-    #skills{
-        margin-top: 25px;
-    }
-    
-    .porcentagem{
-        font-size: 100%;
-        color: rgb(855,855,0,0.0);
-    }
-    
-    
-    .sub-icon{
-      margin-left: 40%;
-    }
-    footer{
-        width: 100%;
-         
-        text-align-last: center;
-    }
-    footer address{
-       
-        text-align: center;
-    }
-   
-    footer ul li{
-        float: none;
-        display: inline-block;
-        align-items: center;
-          font-size: 70%;
-    }
-    footer p{
-        margin: 0;
-   
-    font-size:100%;
-    text-align: center;
-         
+		header img{
+				position: absolute;
+				visibility: hidden;  
+		}
+		h1{
+				font-size: 20px;
+		}
+		h2{
+			margin-top: -50px;
+		}
+		nav li a[href="#con"]{
+				position: absolute;
+				visibility: hidden;
+		}
+			nav li a[href="#con"] i{
+				position: relative;
+				visibility: visible;
+				margin: -45px 0 0 0;
+				float: right;
+		}
+		nav li{
+				font-size:20px;
+		}
+		#start p{
+		font-size: 23px;
+		text-align: justify;
+	
+		}
+		
+		.botao{
+			width: 100%;
+				border: none;
+				background-color: rgb(112,128,144,0.3);
+				height: 80px;
+				margin-top: -95px;
+				
+		}
+		.icone{ 
+				left: 0;
+			
+		}
+		.blocos{
+						background-color: rgb(112,128,144,0.0);
+				box-shadow: none;
+		}
+		section{
+				
+			
+		}
+		#about p{
+		
+				font-size: 18px;
+		}
+		#about p i{
+			font-size: 100%;
+		}
+		#skills{
+				margin-top: 90px;
+				height: auto;
+		}
+		
+		.porcentagem{
+				font-size: 100%;
+				color: rgb(855,855,0,0.0);
+		}
+		
+		
+		.sub-icon{
+			margin-left: 40%;
+		}
+		footer{
+				width: 100%;
+					
+				text-align-last: center;
+		}
+		footer address{
+				
+				text-align: center;
+		}
+		
+		footer ul li{
+				float: none;
+				display: inline-block;
+				align-items: center;
+					font-size: 70%;
+		}
+		footer p{
+				margin: 0;
+		
+		font-size:100%;
+		text-align: center;
+					
 }
 }
 
 @media (min-width:480px) and (max-width:597px){
-    .iniciar, texto{
-            animation-duration: 1.7s;
-    }
-    .cair{
-        animation: none;
-    }
-     body{
-        background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
-    }
-    header{
-       
+    #corpo{
+				background-image: url(img/reileao.jpg);
+		}
+		.iniciar, texto{
+						animation-duration: 1.7s;
+		}
+		.cair{
+				animation: none;
+		}
+			body{
+				background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
+		}
+		header{
+				
 
-    }
-        header img{
-            float: left;
-        
-       
-    }
-     nav li a[href="#con"]{
-        position: absolute;
-        visibility: hidden;
-    }
-     nav li a[href="#con"] i{
-        position:static;
-        visibility: visible;
-         color: #fff;
-         font-size: 200%;
-        margin: -5% 0 0 290%;
-    }
-    h1{
-        position: absolute;
-        visibility: hidden;
-    }
-    .slide:nth-child(2) h2{
- margin-top: 25px;
-    font-size:300%;
+		}
+				header img{		
+				    position: absolute;
+                    visibility: hidden;		
+		}
+			nav li a[href="#con"]{
+				position: absolute;
+				visibility: hidden;
+		}
+			nav li a[href="#con"] i{
+				position:static;
+				visibility: visible;
+					font-size: 200%;
+				margin: -60px 0 0 50px;;
+                float: right;
+		}
+		h1{
+				font-size: 30px;
+		}
+		.slide:nth-child(2) h2{
+	margin-top: 25px;
+		font-size:300%;
 }
 .slide p{
-   font-size: 100%;
+		font-size: 100%;
 }
-    #skills{
-        margin-top: 25px;
-    }
-    .sub-icon{
-      margin-left: 43%;
-    }
-    .blocos{
-           background-color: rgb(112,128,144,0.0);
-        box-shadow: none;
-    }
-    section{
-        
-     background-color: rgb(112,128,144,0.1);
-    }
-    
-     .botao{
-      width: 100%;
-       border: none;
-       background-color: rgb(112,128,144,0.3);
-       height: 80px;
+		#skills{
+				margin-top: 90px;
+				height: auto;
+		}
+		.sub-icon{
+			margin-left: 43%;
+		}
+		.blocos{
+						background-color: rgb(112,128,144,0.0);
+				box-shadow: none;
+		}
+		section{
+				
+			background-color: rgb(112,128,144,0.1);
+		}
+		
+			.botao{
+			width: 100%;
+				border: none;
+				background-color: rgb(112,128,144,0.3);
+				height: 80px;
 margin-top: -95px;
-       
-    }
-    .icone{ 
-        left: 0;
-      
-    }
-    
-       footer address{
-       
-        text-align: center;
-    }
-    footer{
-        text-align-last: center;
-          
-    }
-    footer ul li{
-        float: none;
-        display: inline-block;
-        align-items: center;
-        font-size: 150%;
-    }
-    footer p{
-        margin: 0;
-   
-    font-size:100%;
-    text-align: center;
-         
+				
+		}
+		.icone{ 
+				left: 0;
+			
+		}
+		
+				footer address{
+				
+				text-align: center;
+		}
+		footer{
+				text-align-last: center;
+					
+		}
+		footer ul li{
+				float: none;
+				display: inline-block;
+				align-items: center;
+				font-size: 150%;
+		}
+		footer p{
+				margin: 0;
+		
+		font-size:100%;
+		text-align: center;
+					
 }
 }
 
 @media (min-width: 598px) and (max-width:767px) { 
 .iniciar, texto{
-            animation-duration: 1.7s;
-    }
-     body{
-        background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
-    }
-    header{
-         
-    }
-    
-    header img{
-        
-            float: left;
-       
-    }
-     nav li a[href="#con"]{
-        position: absolute;
-        visibility: hidden;
-    }
-     nav li a[href="#con"] i{
-        position:static;
-        visibility: visible;
-         font-size: 190%;
-         color:#fff;
-        margin: -5% 0 0 400%;
-    }
-    h1{
-        position: absolute;
-        visibility: hidden;
-    }
-    /*----*/
-     #skills, #about{
-        margin-top: 100px;
-         height: auto;  
-    }
-     .blocos{
-           background-color: rgb(112,128,144,0.0);
-        box-shadow: none;
-    }
-    .sub-icon{
-      margin-left: 43%;
-        font-size: 130%;
-        height: 100px;
-        width: 100px;
-    }
-    .barra, .porcentagem{
-        height: 50px;
-        font-size: 30px;
-         
-    }
-    .porcentagem{
-        padding: 13px  8px 0 0;
-    }
-    #about p{
-        font-size: 150%;
-    }
-       section{
-        
-     background-color: rgb(112,128,144,0.1);
-    }
-    
-     .botao{
-      width: 100%;
-       border: none;
-       background-color: rgb(112,128,144,0.3);
-       height: 100px;
-         font-size:220%;
+						animation-duration: 1.7s;
+		}
+			#corpo{
+				background-image: url(img/reileao.jpg);
+		}
+		header{
+					
+		}
+		
+		header img{
+				
+				position: absolute;
+				visibility: hidden;		
+				
+		}
+			nav li a[href="#con"]{
+				position: absolute;
+				visibility: hidden;
+		}
+			nav li a[href="#con"] i{
+				position:static;
+				visibility: visible;
+				font-size: 250%;
+				margin: -150px 0 0 45%;
+                text-align: right;
+		}
+		h1{
+			font-size: 43px;	
+		}
+		/*----*/
+			#skills, #about{
+				margin-top: 100px;
+					height: auto;  
+		}
+			.blocos{
+						background-color: rgb(112,128,144,0.0);
+				box-shadow: none;
+		}
+		.sub-icon{
+			margin-left: 43%;
+				font-size: 130%;
+				height: 100px;
+				width: 100px;
+		}
+		.barra, .porcentagem{
+				height: 50px;
+				font-size: 30px;
+					
+		}
+		.porcentagem{
+				padding: 13px  8px 0 0;
+		}
+		#about p{
+				font-size: 150%;
+		}
+				section{
+				
+			background-color: rgb(112,128,144,0.1);
+		}
+		
+			.botao{
+			width: 100%;
+				border: none;
+				background-color: rgb(112,128,144,0.3);
+				height: 100px;
+					font-size:220%;
 margin-top: -110px;
-       
-    }
-    .icone{ 
-        left: 0;
-      
-    }
-    /*-----*/
-       footer address{
-       font-size:150%;
-        text-align: center;
-    }
-    
-    footer{
-        text-align-last: center;
-       
-    }
-    footer ul li{
-        float: none;
-        display: inline-block;
-        align-items: center;
-        font-size: 150%;
-    }
-    footer p{
-        margin: 0;
-   
-    font-size:150%;
-    text-align: center;
-         
+				
+		}
+		.icone{ 
+				left: 0;
+			
+		}
+		/*-----*/
+				footer address{
+				font-size:150%;
+				text-align: center;
+		}
+		
+		footer{
+				text-align-last: center;
+				
+		}
+		footer ul li{
+				float: none;
+				display: inline-block;
+				align-items: center;
+				font-size: 150%;
+		}
+		footer p{
+				margin: 0;
+		
+		font-size:150%;
+		text-align: center;
+					
 }
 }
 
 
 @media (min-width: 768px) and (max-width: 908px) {
-     body{
-        background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
-    }
-    header img{ position: absolute;
-    visibility: hidden;}
-    nav li a[href="#con"]{
-        position: absolute;
-        visibility: hidden;
-    }   #skills, #about{
-        margin-top: 100px;
-         height: auto;  
-    }
-     .blocos{
-           background-color: rgb(112,128,144,0.0);
-        box-shadow: none;
-    }
-    .sub-icon{
-      margin-left: 43%;
-        font-size: 130%;
-        height: 100px;
-        width: 100px;
-    }
-    .barra, .porcentagem{
-        height: 50px;
-        font-size: 30px;
-         
-    }
-    .porcentagem{
-        padding: 13px  8px 0 0;
-    }
-    #about p, #about i{
-        font-size: 170%;
-    }
-       section{
-        
-     background-color: rgb(112,128,144,0.1);
-    }
+			body{
+				background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
+		}
+		header img{ position: absolute;
+		visibility: hidden;}
+		nav li a[href="#con"]{
+				position: absolute;
+				visibility: hidden;
+		}nav li a[href="#con"] i{
+				position:static;
+				visibility: visible;
+					font-size: 250%;
+						
+				margin: -105% 0 0 100px;
+		} 
     
-     .botao{
-      width: 100%;
-       border: none;
-       background-color: rgb(112,128,144,0.3);
-       height: 100px;
-        font-size:220%;
+    #skills, #about{
+				margin-top: 100px;
+					height: auto;  
+		}
+			.blocos{
+						background-color: rgb(112,128,144,0.0);
+				box-shadow: none;
+		}
+		.sub-icon{
+			margin-left: 43%;
+				font-size: 130%;
+				height: 100px;
+				width: 100px;
+		}
+		.barra, .porcentagem{
+				height: 50px;
+				font-size: 30px;
+					
+		}
+		.porcentagem{
+				padding: 13px  8px 0 0;
+		}
+		#about p, #about i{
+				font-size: 170%;
+		}
+				section{
+				
+			background-color: rgb(112,128,144,0.1);
+		}
+		
+			.botao{
+			width: 100%;
+				border: none;
+				background-color: rgb(112,128,144,0.3);
+				height: 100px;
+				font-size:220%;
 margin-top: -110px;
-       
-    }
-    .icone{ 
-        left: 0;
-      
-    }
-       nav li a[href="#con"] i{
-        position:static;
-        visibility: visible;
-         font-size: 200%;
-           color:#fff;
-        margin: -35% 0 0 100px;
-    }
-    h1{margin-left:-25%;}
-    footer ul li, footer address{
-                font-size: 150%;
-    }
-    footer p{
-         font-size: 120%;
-    }
-    
-    
-    
+				
+		}
+		.icone{ 
+				left: 0;
+			
+		}
+				
+		h1{margin-left:-25%;}
+		footer ul li, footer address{
+								font-size: 150%;
+		}
+		footer p{
+					font-size: 120%;
+		}
+		
+		
+		
 }
 
 @media (min-width:1007.1px){
-    .slide:nth-child(2) h2{
- margin-top: 25px;
-    font-size:350%;
-       
+		.slide:nth-child(2) h2{
+		margin-top: 25px;
+		font-size:350%;
+				
+}
+#about{
+	height: auto;
 }
 .slide p{
-   font-size: 100%;
+		font-size: 100%;
 }
-    
+		
 }
-
 
 

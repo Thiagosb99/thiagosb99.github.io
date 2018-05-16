@@ -31,7 +31,7 @@ setInterval(function(){
 
 $(document).scroll(function(){
     if(screen.width>="250" && screen.width<="1023")
-    { var rolar = parseFloat($("header").height())+ parseFloat($("#about").height()) + parseFloat($("#start").height()); 
+    { var rolar = parseFloat($("#about").height()) + parseFloat($("#start").height()); 
      
       if($(document).scrollTop()>rolar){
          $(".barra").addClass("mobile"); 

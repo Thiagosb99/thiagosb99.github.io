@@ -593,7 +593,7 @@ margin-top: -95px;
 		nav li a[href="#con"]{
 				position: absolute;
 				visibility: hidden;
-                margin: -61px 0 0 100px;
+               margin: -61px 0 0 60px;
 		}nav li a[href="#con"] i{
 				position:static;
 				visibility: visible;

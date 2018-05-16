@@ -2,14 +2,17 @@
 padding: 0;
 margin: 0;}
 
-
-#corpo{
-    background-image: url(https://thiagosb99.github.io/img/wall4.jpg);
+.padrao{
+    background-size: cover;
     background-repeat: no-repeat;
-			-webkit-transition: background 0.1s;
-				-moz-transition: background 0.1s;
+    width: 100%;
+    height: auto;
+    
+}
+#corpo{
+    -webkit-transition: background 2.5s;
+		-moz-transition: background 2.5s;
 		transition: background 2.5s;
-
 }
 
 
@@ -18,7 +21,7 @@ margin: 0;}
    ========================================================================== */
 
 
-/*slide*/
+/*mobile*/
 @keyframes mobile{
     0% {
     opacity: 0;
@@ -47,10 +50,12 @@ margin: 0;}
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+
+/*Slider*/
 @-webkit-keyframes slide {
 	
 		20%, 50%{
-				transform: translateX(0); /* 5s 10s 14s 19s */
+				transform: translateX(0); 
 		}
 		
 		70%, 100% {
@@ -120,6 +125,7 @@ position: static;
 }
 
 /*texto*/
+
 @keyframes texto{
 		0%{margin-left: -1000px; opacity: 0;}
 		
@@ -158,12 +164,15 @@ header{
 header .container img{
 		width: 100px;
 		height: 120px;
-		border-radius: 5px;}
+		border-radius: 5px;
+margin-left: 0%;}
 
 h1{
 		margin-top: 25px;
 		font: 50px 'economica', sans-serif ;
-		color: #fff;}
+		color: #fff;
+    
+}
 
 nav li a{
 		transition: 0.5s ease;
@@ -184,7 +193,10 @@ nav li a:hover{
 			position: absolute;
 		}
 
-/*SECTION----------------------------------*/
+
+/* ==========================================================================
+				SECTION
+   ========================================================================== */
 h2{
 		font: 40px  'oswald', sans-serif ;
 		color: #fff;
@@ -330,7 +342,7 @@ footer i{
 		color: rgb(255,255,255,0.4);
 		margin: 0 7px;
 }
-	footer ul li{
+footer ul li{
 				display: inline-block;
 		}
 footer p{
@@ -345,18 +357,16 @@ footer p{
 
 
 
-/*-------------MEDIAS ------------------------------*/
+/*-------------MEDIDAS ------------------------------*/
 
 @media (min-width:250px) and (max-width:479px){
-		.iniciar, texto{
+		.iniciar, .texto{
 						animation-duration: 1.7s;
 		}
     .cair{
         animation: none;
     }
-	#corpo{
-				background-image: url(img/alcelua.jpg);
-		}
+	
 		header{
 			
 				width: 100%;
@@ -433,14 +443,16 @@ footer p{
 		}
 		
 		.porcentagem{
-				font-size: 100%;
-				color: rgb(855,855,0,0.0);
+				font-size: 140%;
+				
 		}
 		
 		
 		.sub-icon{
 			margin-left: 40%;
 		}
+    
+   
 		footer{
 				width: 100%;
 					
@@ -449,9 +461,10 @@ footer p{
 		footer address{
 				
 				text-align: center;
+                font-size: 50%;
 		}
 		
-		footer ul li{
+		footer ul li a{
 				float: none;
 				display: inline-block;
 				align-items: center;
@@ -494,7 +507,7 @@ footer p{
 			nav li a[href="#con"] i{
 				position:static;
 				visibility: visible;
-					font-size: 200%;
+					font-size: 180%;
 				margin: -60px 0 0 50px;;
                 float: right;
 		}
@@ -577,17 +590,17 @@ margin-top: -95px;
 				visibility: hidden;		
 				
 		}
-			nav li a[href="#con"]{
+		nav li a[href="#con"]{
 				position: absolute;
 				visibility: hidden;
-		}
-			nav li a[href="#con"] i{
+                margin: -61px 0 0 100px;
+		}nav li a[href="#con"] i{
 				position:static;
 				visibility: visible;
-				font-size: 250%;
-				margin: -150px 0 0 45%;
-                text-align: right;
-		}
+					font-size: 200%;
+						
+				
+		} 
 		h1{
 			font-size: 43px;	
 		}
@@ -667,15 +680,17 @@ margin-top: -110px;
 		}
 		header img{ position: absolute;
 		visibility: hidden;}
+    
 		nav li a[href="#con"]{
 				position: absolute;
 				visibility: hidden;
+                margin: -50px 0 0 100px;
 		}nav li a[href="#con"] i{
 				position:static;
 				visibility: visible;
-					font-size: 250%;
+					font-size: 200%;
 						
-				margin: -105% 0 0 100px;
+				
 		} 
     
     #skills, #about{
@@ -717,12 +732,13 @@ margin-top: -110px;
 margin-top: -110px;
 				
 		}
+		}
 		.icone{ 
 				left: 0;
 			
 		}
 				
-		h1{margin-left:-25%;}
+		
 		footer ul li, footer address{
 								font-size: 150%;
 		}

@@ -10,10 +10,8 @@ var cont=0;
      else if(screen.width>="1024"){
           $("#corpo").addClass("padrao");
           $("#corpo").css("background-image","url(img/wolf.jpg)");
-     }  
-});
-
-setInterval(function(){
+     }
+  setInterval(function(){
     if(screen.width>="250" && screen.width< "1024")
     {
     img = ["img/alcelua.jpg","img/balanco.jpg","img/saturno.jpg"];
@@ -27,6 +25,9 @@ setInterval(function(){
         $("#corpo").css("background-image","url("+img[cont]+")");
         cont++;
     },8000);
+});
+
+
 
 
 $(document).scroll(function(){

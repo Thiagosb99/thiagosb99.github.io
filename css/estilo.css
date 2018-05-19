@@ -11,7 +11,8 @@ margin: 0;}
 }
 #corpo{
     -webkit-transition: background 2.5s;
-		-moz-transition: background 2.5s;
+    -moz-transition: background 2.5s;
+    -o-transition: background 2.5s;
 		transition: background 2.5s;
 }
 
@@ -22,6 +23,75 @@ margin: 0;}
 
 
 /*mobile*/
+@-webkit-keyframes mobile{
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+     -webkit-transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+     -webkit-transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+     -webkit-transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+     -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@-moz-keyframes mobile{
+    0% {
+    opacity: 0;
+    -moz-transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -moz-transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -moz-transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -moz-transform: translate3d(0, 0, 0);
+  }
+}
+@-o-keyframes mobile{
+    0% {
+    opacity: 0;
+    -o-transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -o-transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -o-transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -o-transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -o-transform: translate3d(0, 0, 0);
+  }
+}
 @keyframes mobile{
     0% {
     opacity: 0;
@@ -45,7 +115,14 @@ margin: 0;}
     transform: translate3d(0, 0, 0);
   }
 }
+
 .mobile{
+    -webkit-animation: mobile 1.5s;
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-animation: mobile 1.5s;
+    -moz-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-animation: mobile 1.5s;
+    -o-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation: mobile 1.5s;
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -53,6 +130,39 @@ margin: 0;}
 
 /*Slider*/
 @-webkit-keyframes slide {
+	
+		20%, 50%{
+				-webkit-transform: translateX(0); 
+		}
+		
+		70%, 100% {
+		-webkit-transform: translateX(-100%);
+			
+	}    
+}
+@-moz-keyframes slide {
+	
+		20%, 50%{
+				-moz-transform: translateX(0); 
+		}
+		
+		70%, 100% {
+		-moz-transform: translateX(-100%);
+			
+	}    
+}
+@-o-keyframes slide {
+	
+		20%, 50%{
+				-o-transform: translateX(0); 
+		}
+		
+		70%, 100% {
+		-o-transform: translateX(-100%);
+			
+	}    
+}
+@keyframes slide {
 	
 		20%, 50%{
 				transform: translateX(0); 
@@ -88,17 +198,48 @@ position: static;
 
 .slide {
 		transform: translateX(100%);
-	-webkit-animation: slide 10s infinite linear;}
+	-webkit-animation: slide 10s infinite linear;
+-moz-animation: slide 10s infinite linear;
+    -o-animation: slide 10s infinite linear;
+    animation: slide 10s infinite linear;
+}
 
 .slide:nth-child(1) h2{
 	margin-top: 50px;}
 
 .slide:nth-child(2) {
-	-webkit-animation-delay: 5s;}
+	-webkit-animation-delay: 5s;
+-moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+}
 
 
 	/*cair*/
-
+@-webkit-keyframes cair { 
+    0%{
+        margin-top: -500px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+@-moz-keyframes cair { 
+    0%{
+        margin-top: -500px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+@-o-keyframes cair { 
+    0%{
+        margin-top: -500px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
 @keyframes cair { 
     0%{
         margin-top: -500px;
@@ -108,46 +249,80 @@ position: static;
     }
 }
 .cair{
+    -webkit-animation-name: cair;
+		-webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: cair;
+		-moz-animation-timing-function: ease-in-out;
+    -o-animation-name: cair;
+		-o-animation-timing-function: ease-in-out;
 	animation-name: cair;
 		animation-timing-function: ease-in-out;
 }
 .t1{
-		animation-duration: 0.5s;
+-webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
 }
 .t2{
-		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
 }.t3{
-		animation-duration: 1.5s;
+		-webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
 }.t4{
-		animation-duration: 2s;
+			-webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
 }.t5{
-		animation-duration: 2.5s;
+			-webkit-animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+    -o-animation-duration: 2.5s;
+    animation-duration: 2.5s;
 }
 
-/*texto*/
-
-@keyframes texto{
-		0%{margin-left: -1000px; opacity: 0;}
-		
-		100%{margin-left:0px; opacity: 1;}
-}
-
-.texto{
-		animation: texto 1.3s ease-in-out; 
-}
 
 /*iniciar*/
 
-@keyframes iniciar{
-		0%{margin-left: 500px; opacity: 0;
+@-webkit-keyframes iniciar{
+		0%{ opacity: 0;
 			font-family:}
 		
-		100%{margin-left:0px; opacity: 1;}
+		100%{ opacity: 1;}
+}
+@-moz-keyframes iniciar{
+		0%{ opacity: 0;
+			font-family:}
+		
+		100%{ opacity: 1;}
+}
+@-o-keyframes iniciar{
+		0%{ opacity: 0;
+			font-family:}
+		
+		100%{ opacity: 1;}
+}
+@keyframes iniciar{
+		0%{ opacity: 0;
+			font-family:}
+		
+		100%{ opacity: 1;}
 }
 
 
 .iniciar{
-animation-name: iniciar  ;
+    -webkit-animation-name: iniciar ;
+		-webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: iniciar ;
+		-moz-animation-timing-function: ease-in-out;
+    -o-animation-name: iniciar ;
+		-o-animation-timing-function: ease-in-out;
+animation-name: iniciar ;
 		animation-timing-function: ease-in-out;
 }
 
@@ -157,6 +332,7 @@ animation-name: iniciar  ;
    ========================================================================== */
 
 header{
+    
 		background-color: rgb(169,169,169,0.2);
 		margin-bottom: 10px;
 		padding: 25px 0;}
@@ -165,21 +341,23 @@ header .container img{
 		width: 100px;
 		height: 120px;
 		border-radius: 5px;
-margin-left: 0%;}
+        margin-left: 0%;}
 
 h1{
 		margin-top: 25px;
 		font: 50px 'economica', sans-serif ;
-		color: #fff;
-    
+		color: #fff;   
 }
 
 nav li a{
-		transition: 0.5s ease;
-		color: rgb(250,250,0,0.5);}
+		-webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        transition: 0.5s ease;
+		color: #8e8e11;}
 
 nav li{
-			margin-top: 25px;
+        margin-top: 25px;
 		font: 50px 'economica', sans-serif;
 		color: #fff;
 		list-style: none;}
@@ -198,19 +376,14 @@ nav li a:hover{
 				SECTION
    ========================================================================== */
 h2{
-		font: 40px  'oswald', sans-serif ;
+		font: 80px  'oswald', sans-serif ;
 		color: #fff;
 		text-align: center;
 }
-hr{
-		width: 70%;
-		margin: 10px 12% 20px 12%;
-}
-
 p{
-				font-family: 'Source Sans Pro', sans-serif;
-				text-align: justify;
-				color: #fff;}
+font-family: 'Source Sans Pro', sans-serif;
+text-align: justify;
+color: #fff;}
 
 .blocos{
 		padding: 50px 10px 0 0px;
@@ -229,9 +402,12 @@ p{
 	text-align: center;
 	border: 1px solid white;
 	border-radius: 4px;
+    -webkit-transition: 0.6s linear;
+    -moz-transition: 0.6s linear;
+    -o-transition: 0.6s linear;
 	transition: 0.6s linear;
 	color: #fff;
-	background-color: rgb(169,169,169,0.7);
+	background-color: #828282 ;
 }
 .botao:hover{
 			color: gray;
@@ -246,6 +422,9 @@ p{
 	background-color: #fff;
 	border-color:#323232;
 	margin-left: 45%;	
+    -webkit-transition: all 0.1s; 
+    -moz-transition: all 0.1s; 
+    -o-transition: all 0.1s; 
  transition: all 0.1s; 
 }
 .sub-icon:hover{
@@ -255,8 +434,8 @@ p{
 
 .icone{
 		position: absolute;
-		margin-top: -70px;
-		left: 20px;
+		margin-top: -80px;
+		margin-left: 10px;
 }
 .barra{
 	width: 100%;
@@ -279,7 +458,7 @@ p{
 		height:35px;
 		background-color: rgb(855,855,0,0.7);
 }
-
+    /*porcentagem :background-color: #f8cc0c;
 
 /*IDS -----------------------*/
 
@@ -294,16 +473,15 @@ p{
 		height: auto;
 	}
 #start p{
-		font-size: 30px;
 		padding: 0 25px;
-		font-family: 'oswald', sans-serif;
+		font: 30px 'oswald', sans-serif;
 }
 #about{
 	height: 420px;
 }
 #about p {
 		padding-left: 20px;
-		text-align: justify;
+		text-align: left;
 		font-size: 22px;
 		opacity: 0.8; 
 		margin: 0 0 30px 30px;
@@ -321,7 +499,7 @@ p{
    ========================================================================== */
 
 footer{
-		background-color:rgb(169,169,169,0.2);
+		background-color: rgb(169,169,169,0.2);/*#222222;*/
 		padding: 10px 0 10px 0;
 
 }
@@ -334,20 +512,23 @@ footer address{
 footer a{
 		display: block;
 }
-footer i:hover{
-		color:#fff;
-}
+
 footer i{
+        -webkit-transition: 0.6s linear; 
+        -moz-transition: 0.6s linear; 
+        -o-transition: 0.6s linear; 
 		transition: 0.6s linear;  
 		color: rgb(255,255,255,0.4);
 		margin: 0 7px;
+}
+footer i:hover{
+		color:#fff;
 }
 footer ul li{
 				display: inline-block;
 		}
 footer p{
 		margin: -30px 0 0 0;
-		font-size:16px;
 		font-family: 'arial';
 		text-align: right;
 		color: rgb(255,255,255,0.4)
@@ -360,324 +541,186 @@ footer p{
 /*-------------MEDIDAS ------------------------------*/
 
 @media (min-width:250px) and (max-width:479px){
-		.iniciar, .texto{
-						animation-duration: 1.7s;
-		}
-    .cair{
-        animation: none;
-    }
+    .iniciar{animation-duration: 1.7s;}
+    .cair{animation: none;}
 	
-		header{
-			
-				width: 100%;
-		}
 		.slide h2 {
 	font-size:350%;
 
-}.slide:nth-child(2) h2{
-	margin-top: 25px;
-		font-size:250%;
 }
+    .slide:nth-child(2) h2{margin-top: 25px;font-size:250%;}
 .slide p{
-		font-size: 100%;
-}
+		font-size: 100%;}
 		header img{
-				position: absolute;
-				visibility: hidden;  
+            position: absolute;
+            visibility: hidden;  
 		}
 		h1{
-				font-size: 20px;
+            font-size: 20px;
 		}
 		h2{
 			margin-top: -50px;
 		}
 		nav li a[href="#con"]{
-				position: absolute;
-				visibility: hidden;
+            position: absolute;
+            visibility: hidden;
 		}
-			nav li a[href="#con"] i{
-				position: relative;
-				visibility: visible;
-				margin: -45px 0 0 0;
-				float: right;
+        nav li a[href="#con"] i{
+            position: relative;
+            visibility: visible;
+            margin: -45px 0 0 0;
+            float: right;
 		}
 		nav li{
 				font-size:20px;
 		}
-		#start p{
-		font-size: 23px;
-		text-align: justify;
-	
-		}
+		#start p{font-size: 23px;text-align: justify;}
 		
-		.botao{
-			width: 100%;
+		.botao{width: 100%;
 				border: none;
 				background-color: rgb(112,128,144,0.3);
 				height: 80px;
-				margin-top: -95px;
-				
+				margin-top: -95px;		
 		}
-		.icone{ 
-				left: 0;
-			
+		.icone{ left: 0;margin-left: 0;}
+		.blocos{background-color:inherit;box-shadow: none;
 		}
-		.blocos{
-						background-color: rgb(112,128,144,0.0);
-				box-shadow: none;
-		}
-		section{
-				
-			
-		}
-		#about p{
+
+		#about p{font-size: 18px; text-align: justify;}
+		#about p i{font-size: 100%;}
+		#skills{margin-top: 90px;height: auto;}
 		
-				font-size: 18px;
-		}
-		#about p i{
-			font-size: 100%;
-		}
-		#skills{
-				margin-top: 90px;
-				height: auto;
-		}
-		
-		.porcentagem{
-				font-size: 140%;
-				
-		}
+		.porcentagem{font-size: 140%;}
 		
 		
-		.sub-icon{
-			margin-left: 40%;
-		}
+		.sub-icon{margin-left: 40%;}
     
    
-		footer{
-				width: 100%;
-					
-				text-align-last: center;
-		}
-		footer address{
-				
-				text-align: center;
-                font-size: 50%;
-		}
+		footer{width: 100%;text-align-last: center;}
+		footer address{text-align: center;}
 		
-		footer ul li a{
-				float: none;
-				display: inline-block;
-				align-items: center;
-					font-size: 70%;
-		}
-		footer p{
-				margin: 0;
-		
+		footer ul li a{float: none;display: inline-block;align-items: center;font-size: 70%;}
+		footer p{margin: 0;
 		font-size:100%;
-		text-align: center;
-					
-}
+		text-align: center;}
 }
 
 @media (min-width:480px) and (max-width:597px){
-    #corpo{
-				background-image: url(img/reileao.jpg);
+		.iniciar{animation-duration: 1.7s;}
+		.cair{animation: none;}
+    
+        header img{	position: absolute;visibility: hidden;}
+    
+        nav li a[href="#con"]{position: absolute;visibility: hidden;}
+        nav li a[href="#con"] i{
+		position:static;
+		visibility: visible;
+		font-size: 180%;
+		margin: -60px 0 0 50px;;
+        float: right;
 		}
-		.iniciar, texto{
-						animation-duration: 1.7s;
-		}
-		.cair{
-				animation: none;
-		}
-			body{
-				background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
-		}
-		header{
-				
-
-		}
-				header img{		
-				    position: absolute;
-                    visibility: hidden;		
-		}
-			nav li a[href="#con"]{
-				position: absolute;
-				visibility: hidden;
-		}
-			nav li a[href="#con"] i{
-				position:static;
-				visibility: visible;
-					font-size: 180%;
-				margin: -60px 0 0 50px;;
-                float: right;
-		}
-		h1{
-				font-size: 30px;
-		}
+    
+		h1{	font-size: 30px;}
+    
 		.slide:nth-child(2) h2{
-	margin-top: 25px;
-		font-size:300%;
-}
-.slide p{
-		font-size: 100%;
-}
-		#skills{
-				margin-top: 90px;
-				height: auto;
-		}
-		.sub-icon{
-			margin-left: 43%;
-		}
-		.blocos{
-						background-color: rgb(112,128,144,0.0);
-				box-shadow: none;
-		}
-		section{
-				
-			background-color: rgb(112,128,144,0.1);
-		}
+	    margin-top: 25px;
+		font-size:300%;}
+        .slide p{font-size: 100%;}
+    
+		#skills{margin-top: 90px;height: auto;}
+    
+		.sub-icon{margin-left: 43%;}
+		.blocos{background-color: inherit;
+				box-shadow: none;}
+    
+		section{background-color: rgb(112,128,144,0.1);}
 		
-			.botao{
-			width: 100%;
+        .botao{
+                width: 100%;
 				border: none;
 				background-color: rgb(112,128,144,0.3);
 				height: 80px;
-margin-top: -95px;
-				
-		}
-		.icone{ 
-				left: 0;
-			
-		}
-		
-				footer address{
-				
-				text-align: center;
-		}
-		footer{
-				text-align-last: center;
-					
-		}
+                margin-top: -95px;}
+		.icone{ left: 0;margin-left: 0;}
+    
+		footer address{text-align: center;}
+		footer{text-align-last: center;}
 		footer ul li{
 				float: none;
 				display: inline-block;
 				align-items: center;
-				font-size: 150%;
-		}
-		footer p{
-				margin: 0;
-		
-		font-size:100%;
-		text-align: center;
-					
-}
+				font-size: 150%;}
+		footer p{margin: 0;font-size:100%;text-align: center;}
 }
 
 @media (min-width: 598px) and (max-width:767px) { 
-.iniciar, texto{
-						animation-duration: 1.7s;
-		}
-			#corpo{
-				background-image: url(img/reileao.jpg);
-		}
-		header{
-					
-		}
-		
-		header img{
-				
-				position: absolute;
-				visibility: hidden;		
-				
-		}
+        .iniciar{animation-duration: 1.7s;}
+    
+		header img{position: absolute;visibility: hidden;}
+    
 		nav li a[href="#con"]{
 				position: absolute;
 				visibility: hidden;
-               margin: -61px 0 0 60px;
-		}nav li a[href="#con"] i{
+                margin: -61px 0 0 60px;}
+        nav li a[href="#con"] i{
 				position:static;
 				visibility: visible;
-					font-size: 200%;
-						
-				
-		} 
-		h1{
-			font-size: 43px;	
-		}
-		/*----*/
-			#skills, #about{
+				font-size: 200%;} 
+    
+		h1{font-size: 43px;	}
+    
+        section{background-color: rgb(112,128,144,0.1);}
+        #skills, #about{
 				margin-top: 100px;
-					height: auto;  
-		}
-			.blocos{
-						background-color: rgb(112,128,144,0.0);
-				box-shadow: none;
-		}
+				height: auto;}
+    
+        .blocos{
+                background-color: inherit;
+				box-shadow: none;}
+    
 		.sub-icon{
-			margin-left: 43%;
+			    margin-left: 43%;
 				font-size: 130%;
 				height: 100px;
-				width: 100px;
-		}
+				width: 100px;}
+    
 		.barra, .porcentagem{
 				height: 50px;
-				font-size: 30px;
-					
-		}
-		.porcentagem{
-				padding: 13px  8px 0 0;
-		}
-		#about p{
-				font-size: 150%;
-		}
-				section{
-				
-			background-color: rgb(112,128,144,0.1);
-		}
-		
-			.botao{
-			width: 100%;
+				font-size: 30px;}
+    
+		.porcentagem{padding: 13px  8px 0 0;}
+    
+		#about p{font-size: 150%;}
+    
+        .botao{
+			    width: 100%;
 				border: none;
 				background-color: rgb(112,128,144,0.3);
 				height: 100px;
-					font-size:220%;
-margin-top: -110px;
-				
-		}
-		.icone{ 
-				left: 0;
-			
-		}
-		/*-----*/
-				footer address{
-				font-size:150%;
-				text-align: center;
-		}
+				font-size:220%;
+                margin-top: -110px;}
+    
+		.icone{ left: 0; margin-left: 0}
 		
+        footer address{
+				font-size:150%;
+				text-align: center;}
 		footer{
-				text-align-last: center;
-				
-		}
+				text-align-last: center;}
 		footer ul li{
 				float: none;
 				display: inline-block;
 				align-items: center;
-				font-size: 150%;
-		}
+				font-size: 150%;}
 		footer p{
-				margin: 0;
-		
-		font-size:150%;
-		text-align: center;
-					
-}
+              margin: 0;
+		      font-size:150%;
+		      text-align: center;}
 }
 
 
 @media (min-width: 768px) and (max-width: 908px) {
-			body{
-				background-image: url(https://thiagosb99.github.io/img/wall-sm.jpg);
-		}
+		
 		header img{ position: absolute;
 		visibility: hidden;}
     
@@ -688,81 +731,50 @@ margin-top: -110px;
 		}nav li a[href="#con"] i{
 				position:static;
 				visibility: visible;
-					font-size: 200%;
-						
-				
-		} 
+				font-size: 200%;} 
+    	section{background-color: rgb(112,128,144,0.1);}
+        #skills, #about{margin-top: 100px;height: auto;}
     
-    #skills, #about{
-				margin-top: 100px;
-					height: auto;  
-		}
-			.blocos{
-						background-color: rgb(112,128,144,0.0);
-				box-shadow: none;
-		}
+        .blocos{background-color: inherit;box-shadow: none;}
+    
 		.sub-icon{
-			margin-left: 43%;
+			    margin-left: 43%;
 				font-size: 130%;
 				height: 100px;
-				width: 100px;
-		}
-		.barra, .porcentagem{
-				height: 50px;
-				font-size: 30px;
-					
-		}
-		.porcentagem{
-				padding: 13px  8px 0 0;
-		}
-		#about p, #about i{
-				font-size: 170%;
-		}
-				section{
-				
-			background-color: rgb(112,128,144,0.1);
-		}
-		
-			.botao{
-			width: 100%;
+				width: 100px;}
+    
+		.barra, .porcentagem{height: 50px;font-size: 30px;}
+    
+		.porcentagem{padding: 13px  8px 0 0;}
+		#about p, #about i{font-size: 170%;}
+			
+        .botao{
+                width: 100%;
 				border: none;
 				background-color: rgb(112,128,144,0.3);
 				height: 100px;
 				font-size:220%;
-margin-top: -110px;
-				
-		}
-		}
+                margin-top: -110px;}
+		
 		.icone{ 
 				left: 0;
-			
-		}
+                margin-left: 0;}
 				
 		
 		footer ul li, footer address{
-								font-size: 150%;
-		}
+				font-size: 150%;}
+        footer address{
+        margin-left: 25px;
+        }
 		footer p{
-					font-size: 120%;
-		}
-		
-		
-		
+				font-size: 120%;}	
 }
 
 @media (min-width:1007.1px){
-		.slide:nth-child(2) h2{
-		margin-top: 25px;
-		font-size:350%;
-				
-}
-#about{
-	height: auto;
-}
-.slide p{
-		font-size: 100%;
-}
-		
+		.slide:nth-child(2) h2{margin-top: 25px;
+		font-size:350%;}
+        #about{height: auto;}
+        .slide p{font-size: 100%;}
 }
 
 

@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://thiagosb99.github.io/css/estilo.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+        <link href="webfonts/fontawesome-all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Economica|Source+Sans+Pro|Oswald" rel="stylesheet">
+        <link rel="icon" href="img/xicara.png">
         <script src="jquery.min.js"></script>
         <script src="code.js"></script>
-        <title>TH - Home</title>
+        <title>Thiago Barbosa - Home</title>
     </head>
 
-<body id="corpo" onload="load()">
-   
-<header id="cabecalho" class="iniciar t2"  >
+<body id="corpo">
+<header class="iniciar t2"  >
         <div class="container">
 
             <div class="row">
-                <div class=" col-sm-2 col-md-2">
-                    <img id="perfil" class="sl t1"src="img/perfil.png" alt="Foto de perfil">
+                <div class=" col-md-2 col-lg-2">
+                    <img id="perfil" class="sl t1"src="img/myself.jpg" alt="Foto">
                 </div>
 
-                <div class="col-xs-8 col-sm-6 col-md-6">
+                <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6">
                     <h1 class="text-left">Thiago dos Santos Barbosa </h1>
                 </div>
 
-                <div class=" col-sm-4 col-md-4">
+                <div class=" col-sm-4 col-md-4 col-lg-4">
                     <nav>
                         <li class="text-left" id="contato"><a href="#con">|Contato</a></li>
                     </nav>
                 </div>
 
-                <div class="col-xs-4 col-sm-4 col-md-4">
+                <div class="col-xs-4 col-sm-4 ">
                     <nav>
                     <li><a href="#con"><i class="fas fa-envelope-square fa-3x"></i></a></li>
                     </nav>
@@ -49,9 +49,9 @@
 
     <div class="row">
 
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-6 col-lg-6">
 
-        <div id="start"  class="blocos texto">
+        <div id="start"  class="blocos">
                     
             <div class="slider">
 
@@ -60,6 +60,7 @@
                 </div>
                 <div class="slide">
                     <h2>Olá, sou Thiago,</h2>
+                    
                     <p>tenho 18 anos, cursando ensino superior e nas horas vagas sou desenvolvedor web.</p>
                 </div>
                          
@@ -67,10 +68,10 @@
 
         </div>
 
-        <div id ="about" class="blocos" onclick="shows()">
+        <div id ="about" class="blocos">
 
             <button  class="botao icone">
-                <i class="fas fa-info-circle fa-lg "></i> Sobre mim
+                <i class="fas fa-info-circle fa-lg "></i> Sobre 
             </button>
 
                 <p><i class="fas fa-arrow-alt-circle-right"></i>Cursei ensino médio integrado com técnologia da informação;</p>
@@ -82,7 +83,7 @@
 
         </div>
 
-        <div class="col-xs-12 col-md-6 ">
+        <div class="col-xs-12 col-md-6 col-lg-6">
             <div id="skills" class="blocos " >
 
                 <button class="botao icone"><i class="fa fa-code "></i> SKILLS</button>
@@ -123,5 +124,38 @@
                 <p>Copyright © 2018 | Thiago dos Santos Barbosa</p>
     </div>
 </footer>
+
+<script>
+           
+    function desatualizados(){ 
+        document.getElementsByTagName("header")[0].style.backgroundColor ="#222222";
+        document.getElementsByTagName("footer")[0].style.backgroundColor ="#222222";
+        document.getElementsByTagName("address")[0].style.color ="#fff";
+          for(var i=0; i<=4; i++){
+        document.getElementsByClassName("porcentagem")[i].style.backgroundColor="#f8cc0c"; 
+        document.getElementsByClassName("blocos")[i].style.border=" 3px solid #222222";   document.getElementsByClassName("fa-5x")[i].style.color="#858585"; 
+          if(i==2){
+            document.getElementsByClassName("porcentagem")[4].style.backgroundColor="#f8cc0c";  
+          }
+      }
+  
+}
+           
+  function get_browser(){
+    var ua=navigator.userAgent,tem,M=ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || []; 
+    if(/trident/i.test(M[1])){
+        tem=/\brv[ :]+(\d+)/g.exec(ua) || []; 
+        if(tem[1]<=11){
+           desatualizados();
+        }
+        return {name:'IE',version:(tem[1]||'')};
+        
+        }   
+         
+ }
+ 
+    window.onload =get_browser();
+  
+</script>  
 </body>
 </html>

@@ -5,7 +5,7 @@ var cont=0;
      if(screen.width>="250" && screen.width<="1023")
      {
           $("#corpo").addClass("padrao");              
-          $("#corpo").css({"background-image": "url(img/saturno.jpg)","background-position": "center"}); 
+          $("#corpo").css({"background-image": "url(img/alcelua.jpg)","background-position": "center"}); 
      }
      else if(screen.width>="1024"){
           $("#corpo").addClass("padrao");
@@ -14,7 +14,7 @@ var cont=0;
   setInterval(function(){
     if(screen.width>="250" && screen.width< "1024")
     {
-    img = ["img/alcelua.jpg","img/balanco.jpg","img/saturno.jpg"];
+    img = ["img/saturno.jpg","img/balanco.jpg","img/alcelua.jpg"];
     }
     else if(screen.width>="1024"){
         img = ["img/spider.jpg","img/samurai.jpg","img/wolf.jpg"]; 

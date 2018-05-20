@@ -24,7 +24,7 @@ var cont=0;
     }
         $("#corpo").css("background-image","url("+img[cont]+")");
         cont++;
-    },8000);
+    },10000);
 });
 
 

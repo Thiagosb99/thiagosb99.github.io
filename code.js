@@ -14,7 +14,7 @@ var cont=0;
   setInterval(function(){
     if(screen.width>="250" && screen.width< "1024")
     {
-   img = ["img/saturno2.jpg","img/balanco2.jpg","img/alcelua2.jpg"];
+   img = ["img/planet.jpg","img/balanco2.jpg","img/alcelua2.jpg"];
     }
     else if(screen.width>="1024"){
         img = ["img/spider.jpg","img/samurai.jpg","img/wolf.jpg"]; 

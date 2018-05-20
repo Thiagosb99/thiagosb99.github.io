@@ -541,23 +541,19 @@ footer p{
 /*-------------MEDIDAS ------------------------------*/
 
 @media (min-width:250px) and (max-width:479px){
-    iniciar{animation-duration: 1.7s;}
+  .iniciar{animation-duration: 1.7s;}
     .cair{animation: none;}
 	
 		.slide h2 {
 	font-size:350%;
 
-    }
+}
     .slide:nth-child(2) h2{margin-top: 25px;font-size:250%;}
 .slide p{
 		font-size: 100%;}
-    header{
-         background-color: rgb(20,20,20,0.9);
-    }
 		header img{
             position: absolute;
-            visibility: hidden; 
-           
+            visibility: hidden;  
 		}
 		h1{
             font-size: 20px;
@@ -589,7 +585,7 @@ footer p{
 		.icone{ left: 0;margin-left: 0;}
 		.blocos{background-color:inherit;box-shadow: none;
 		}
-        section{background-color: rgb(50,50,50,0.5);}
+
 		#about p{font-size: 18px; text-align: justify;}
 		#about p i{font-size: 100%;}
 		#skills{margin-top: 90px;height: auto;}
@@ -600,13 +596,14 @@ footer p{
 		.sub-icon{margin-left: 40%;}
     
    
-		footer{width: 100%;text-align-last: center;background-color: rgb(20,20,20,0.9);}
+		footer{width: 100%;text-align-last: center;}
 		footer address{text-align: center;}
 		
 		footer ul li a{float: none;display: inline-block;align-items: center;font-size: 70%;}
 		footer p{margin: 0;
 		font-size:100%;
 		text-align: center;}
+
 }
 
 @media (min-width:480px) and (max-width:597px){

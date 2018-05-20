@@ -574,6 +574,7 @@ footer p{
 		nav li{
 				font-size:20px;
 		}
+		section{background-color: rgb(112,128,144,0.1);}
 		#start p{font-size: 23px;text-align: justify;}
 		
 		.botao{width: 100%;
